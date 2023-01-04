@@ -1,0 +1,8 @@
+#ZSH themes
+#ZSH_THEME="ditatompel"
+
+#codestats
+export DT_CODESTATS_API_KEY="put your CodeStats API key here"
+
+# Custom IPFS
+# export IPFS_PATH=/mnt/hdd2/IPFS/ditatompel
