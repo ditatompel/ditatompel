@@ -1,0 +1,67 @@
+!! URxvt Appearance
+!! URxvt*font:  xft:Noto Color Emoji:style=regular:size=1
+URxvt.font:  xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.boldFont:  xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.italicFont:  xft:bitstream vera sans mono:size=10:antialias=true
+URxvt.boldItalicfont:  xft:bitstream vera sans mono:size=10:antialias=true
+
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 90x26
+!URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 200000
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+!
+! scrollbar
+!
+! enable scrollbar
+URxvt.scrollBar:          true     
+! scrollbar width
+URxvt.thickness:          5
+! scrollbar color
+URxvt.scrollColor:        #fa74b2
+! scrollbar trough area color
+!URxvt.troughColor:        #333333
+! scrollbar without a trough
+!URxvt.scrollBar_floating: false
+! scrollbar to the right
+URxvt.scrollBar_right:    true
+! scrollbar style
+URxvt.scrollstyle:        plain
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+!URxvt.keysym.M-c: perl:clipboard:copy
+!URxvt.keysym.M-v: perl:clipboard:paste
+!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste
+URxvt.keysym.C-A-V: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: brave
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+!! When you are at the bottom of the output - the console scrolls down on new output;
+!! When you have scrolled a bit up - auto-scrolling on output stops;
+!! When you press any key - the terminal scrolls to the end and starts auto-scrolling;
+URxvt.scrollTtyOutput:      false
+URxvt.scrollWithBuffer:     true
+URxvt.scrollTtyKeypress:    true
