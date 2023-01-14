@@ -125,9 +125,14 @@ export EDITOR=/usr/bin/vim
 eval $(thefuck --alias)
 
 # MPV
+# youtube-dl is requried
 # Search and play YouTube audio
 function yta() {
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
+}
+# Search and play YoutTuve video
+function ytv() {
+    mpv --ytdl-format='bestvideo[height<=?720]+bestaudio/best' ytdl://ytsearch:"$*"
 }
 
 alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
