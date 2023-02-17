@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-# export ZSH="/home/ditatompel/.oh-my-zsh"
+#export ZSH="/home/ditatompel/.oh-my-zsh"
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -13,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Import custom pre-defined variables from ~/.scripts/.my_env
 # See ~/.scripts/.my_env.example to see all variables
-source "$HOME/.scripts/.my_env"
+source $HOME/.scripts/.my_env
 CODESTATS_API_KEY="$DT_CODESTATS_API_KEY"
 
 # Set list of themes to pick from when loading at random
@@ -130,7 +130,7 @@ eval $(thefuck --alias)
 function yta() {
     mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
 }
-# Search and play YoutTuve video
+# Search and play YouTube video
 function ytv() {
     mpv --ytdl-format='bestvideo[height<=?720]+bestaudio/best' ytdl://ytsearch:"$*"
 }
@@ -139,4 +139,3 @@ alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
 
 # Aliases for dotfiles GitHub repository
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.ditatompel_dotfiles/ --work-tree=$HOME'
-
