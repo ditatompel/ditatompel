@@ -14,11 +14,13 @@
 
 !! Colorscheme
 ! my default theme
-! #include "/home/ditatompel/.xres/colorscheme/default"
+#include "/home/ditatompel/.xres/colorscheme/default"
+
+! mocha dark by Chris Kempson
+!#include "/home/ditatompel/.xres/colorscheme/mocha-dark"
 
 ! owl4ce joyful color scheme
-#include "/home/ditatompel/.xres/colorscheme/owl4ce-joyful"
-
+!#include "/home/ditatompel/.xres/colorscheme/owl4ce-joyful"
 
 !! Specific program configuration
 ! my default urxvt config
