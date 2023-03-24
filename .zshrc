@@ -11,9 +11,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 
-# Import custom pre-defined variables from ~/.scripts/.my_env
-# See ~/.scripts/.my_env.example to see all variables
-source $HOME/.scripts/.my_env
+# Import custom pre-defined variables from ~/.local/scripts/myenv
+# See ~/.local/scripts/myenv.example to see all variables
+source $HOME/.local/scripts/myenv
+
 CODESTATS_API_KEY="$DT_CODESTATS_API_KEY"
 
 # Set list of themes to pick from when loading at random
