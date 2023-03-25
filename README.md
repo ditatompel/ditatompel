@@ -15,8 +15,10 @@ This is my personal config file. This dotfiles repo is not intended to "rice" yo
 * [flameshot](https://wiki.archlinux.org/title/Flameshot) for default screenshot app.
 
 ### Required command-line utilities
-* bc
-* jq
+* `rsync` ([Arch Wiki](https://wiki.archlinux.org/title/Rsync)). Most of my backup script use rsync (local).
+* `rclone` for remote and _encrypted_ backup.
+* `bc`
+* `jq`
 * [imagemagick](https://archlinux.org/packages/?name=imagemagick) for alternate screenshot. Probably you already have `imagemagick` installed on your system. See [~/.local/scripts/system/screenshot.sh](.local/scripts/system/screenshot.sh). For more information about screenshot options.
 
 
