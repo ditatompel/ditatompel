@@ -7,7 +7,11 @@ URxvt.boldItalicfont:  xft:bitstream vera sans mono:size=10:antialias=true
 
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
-URxvt.geometry: 90x26
+! Temporary fix vertically centers output, see uncommented geometry config.
+! https://www.reddit.com/r/archlinux/comments/109wsr6/comment/j46utfo/?context=3
+!URxvt.geometry: 90x26
+URxvt.geometry: 104x58-11-34
+
 !URxvt.internalBorder: 24
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
