@@ -66,6 +66,9 @@ fi
 ## Wallpaper
 ## If you want to use wallpaper, execute your wallpaper command here.
 ## For now, I just want to "use" blank black color with no pict.
+## Note that using no background may generate warning log:
+## "background_manager: Failed to get root pixmap, default to black
+## (is there a wallpaper?)" even you set polybar pseudo-transparency = false.
 #nitrogen --restore &
 #feh --no-fehbg --bg-fill '/path/to/wallpaper/pict1.jpg' '/path/to/wallpaper/pict2.jpg'
 

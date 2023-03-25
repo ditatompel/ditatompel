@@ -64,7 +64,6 @@ xsetroot -cursor_name left_ptr &
 #xset fp rehash &
 #fc-cache -fv &
 
-
 _run sxhkd -m -1 > /tmp/sxhkd.log
 
 ## PCManFM File browser daemon 

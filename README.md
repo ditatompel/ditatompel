@@ -13,4 +13,9 @@ This is my personal config file. This dotfiles repo is not intended to "rice" yo
 * [PCManFM](https://wiki.archlinux.org/title/PCManFM)
 * [dunst](https://wiki.archlinux.org/title/Dunst)
 * [flameshot](https://wiki.archlinux.org/title/Flameshot) for default screenshot app.
+
+### Required command-line utilities
+* bc
+* jq
 * [imagemagick](https://archlinux.org/packages/?name=imagemagick) for alternate screenshot. Probably you already have `imagemagick` installed on your system. See [~/.local/scripts/system/screenshot.sh](.local/scripts/system/screenshot.sh). For more information about screenshot options.
+* 
