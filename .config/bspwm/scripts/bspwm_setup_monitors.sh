@@ -71,6 +71,7 @@ fi
 ## (is there a wallpaper?)" even you set polybar pseudo-transparency = false.
 #nitrogen --restore &
 #feh --no-fehbg --bg-fill '/path/to/wallpaper/pict1.jpg' '/path/to/wallpaper/pict2.jpg'
+xsetroot -solid "#000000"
 
 # Kill and relaunch polybar
 killall -q polybar
