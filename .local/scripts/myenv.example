@@ -1,13 +1,6 @@
 ## ZSH themes
 #ZSH_THEME="ditatompel"
 
-#########################################
-## Administrative local mysql credential
-#########################################
-LOCAL_MYSQL_HOST="localhost"
-LOCAL_MYSQL_USER="root"
-LOCAL_MYSQL_PASS=""
-
 ## codestats
 export DT_CODESTATS_API_KEY="put your CodeStats API key here"
 
