@@ -1,6 +1,10 @@
 # My Personal dotfiles
 
-This is my personal config file. This dotfiles repo is not intended to "rice" your desktop. This repo is far from complete, I'll update this repo during my spare time.
+This is my personal config file. This dotfiles repo is not intended to "rice" your desktop. Maybe this dotfiles repo is one of most boring desktop you ever see, trust me! No compositor, no transparency, no animation, nothing. Just basic BSPWM with polybar plus my most used apps.
+
+I put my configs and scripts here for my self, to make me easier moving my machine to the new one if something bad happen to my beloved laptop. But, if you find it useful for you, just clone and edit to fit with your need.
+
+This repo is far from complete, I'll update this repo during my spare time.
 
 ## Packages
 * [sxhkd](https://wiki.archlinux.org/title/Sxhkd)

@@ -17,3 +17,32 @@ SCREENSHOT_DATE_FOLDER="$(date '+%Y')/$(date '+%m')"
 
 ## Custom IPFS
 # export IPFS_PATH=/mnt/hdd2/IPFS/ditatompel
+
+#########################################
+## BACKUP VARS (SysAdmin)
+## Backup variables for local and remote
+#########################################
+## Administrative local mysql credential
+LOCAL_MYSQL_HOST="localhost"
+LOCAL_MYSQL_USER="root"
+LOCAL_MYSQL_PASS=""
+
+## Location SSH private key file
+MASTER_SSH_PRIVATE_KEY_PATH="/path/to/ssh/private/key"
+
+## Administrative remote master MySQL credential
+MASTER_REMOTE_MYSQL_USER="root"
+MASTER_REMOTE_MYSQL_PASS=""
+
+## Individual server vars
+### Wordpress sites in my remote server
+WORDPRESS_SERVER_IP="xxx.xxx.xxx.xxx"
+WORDPRESS_DEST_BACKUP_PATH="/path/to/local/backup/dir"
+# Array of WP site, `IFS` property separate by `|`
+# `IFS[0]` = wp shortname, used to organize backup folder location on S3 or local filesystem
+# `IFS[1]` = Wordpress website directory (remote)
+# `IFS[2]` = MySQL DB Name
+WORDPRESS_WEBSITES=(
+    "example.com|/var/www/example.com|wp_example"  # 1st website
+    "another.example.com|/var/www/another.example.com|wp_another_example"  # 2nd website
+)
