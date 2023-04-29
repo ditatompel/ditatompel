@@ -2,15 +2,15 @@
 ! My custom .Xresources template 
 ! 
 ! Following tips from https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/
-! Create directory ~/.xres/ and place all the configurations there. All you need to do is
+! Create directory ~/.config/X11/xresources.d/ and place all the configurations there. All you need to do is
 ! import the configuration file by removing comment from import path you want to use.
 !
 ! Please USE **ABSOLUTE** path because **RELATIVE** path does NOT work.
 
 !! Colorscheme
-#include "/home/ditatompel/.xres/colorscheme/default"
+#include "/home/ditatompel/.config/X11/xresources.d/colorscheme/default"
 
 !! Specific program configuration
 ! my default urxvt config
-#include "/home/ditatompel/.xres/urxvt/default"
+#include "/home/ditatompel/.config/X11/xresources.d/urxvt/default"
 
