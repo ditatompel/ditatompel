@@ -126,10 +126,10 @@ alt + F4
 
 # terminal emulator
 super + Return
-    urxvt
+    urxvtc
 
 ctrl + alt + t
-    urxvtc
+    urxvtc -name urxvtfloating -geometry 90x26
 
 # program launcher
 alt + @space
