@@ -140,3 +140,4 @@ alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
 
 # Aliases for dotfiles GitHub repository
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.ditatompel_dotfiles/ --work-tree=$HOME'
+

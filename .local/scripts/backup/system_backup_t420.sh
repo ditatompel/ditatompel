@@ -55,6 +55,7 @@ rsync -avh "$TARGET_HOME_DIR/" "$BACKUP_DIR$TARGET_HOME_DIR/" \
     --exclude=".npm"                \
     --exclude=".rvm"                \
     --exclude=".gradle"             \
+    --exclude=".rustup"             \
     --exclude="go"                  \
     -P                              \
     --delete-after

@@ -1,10 +1,5 @@
 !
-!      _ _ _        _                             _ 
-!   __| (_) |_ __ _| |_ ___  _ __ ___  _ __   ___| |
-!  / _` | | __/ _` | __/ _ \| '_ ` _ \| '_ \ / _ \ |
-! | (_| | | || (_| | || (_) | | | | | | |_) |  __/ |
-!  \__,_|_|\__\__,_|\__\___/|_| |_| |_| .__/ \___|_|
-!     My custom .Xresources template  |_|    v0.0.1 
+! My custom .Xresources template 
 ! 
 ! Following tips from https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/
 ! Create directory ~/.xres/ and place all the configurations there. All you need to do is
@@ -13,14 +8,7 @@
 ! Please USE **ABSOLUTE** path because **RELATIVE** path does NOT work.
 
 !! Colorscheme
-! my default theme
 #include "/home/ditatompel/.xres/colorscheme/default"
-
-! mocha dark by Chris Kempson
-!#include "/home/ditatompel/.xres/colorscheme/mocha-dark"
-
-! owl4ce joyful color scheme
-!#include "/home/ditatompel/.xres/colorscheme/owl4ce-joyful"
 
 !! Specific program configuration
 ! my default urxvt config
