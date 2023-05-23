@@ -76,14 +76,17 @@ do
     # Remove old backup
     find ${WORDPRESS_DEST_BACKUP_PATH}/${WEBPARAMS[0]}/DATABASE/ -type f -name "*.sql.gz" -mtime +${BACKUP_RETENTION_LOCAL} -delete
     # Mirror SQL to S3
+    mcli mirror ${WORDPRESS_DEST_BACKUP_PATH}/${WEBPARAMS[0]}/DATABASE ctb1/backups/wordpress/${WEBPARAMS[0]}/DATABASE --remove -a --overwrite
     mcli mirror ${WORDPRESS_DEST_BACKUP_PATH}/${WEBPARAMS[0]}/DATABASE smg1/backups/wordpress/${WEBPARAMS[0]}/DATABASE --remove -a --overwrite
 
     # Compress and copy backup to remote location (just in case)
     if [ "${DO_ARCHIVE_BACKUP}" = true ]; then
         cd ${WORDPRESS_DEST_BACKUP_PATH}/${WEBPARAMS[0]}
         tar -cjf public_html.tar.gz public_html
+        mcli cp public_html.tar.gz ctb1/backups/wordpress/${WEBPARAMS[0]}/public_html.tar.gz
         mcli cp public_html.tar.gz smg1/backups/wordpress/${WEBPARAMS[0]}/public_html.tar.gz
         rm public_html.tar.gz
+        mcli mirror ${WORDPRESS_DEST_BACKUP_PATH}/${WEBPARAMS[0]}/DATABASE ctb1/backups/wordpress/${WEBPARAMS[0]}/DATABASE --remove -a --overwrite
         mcli mirror ${WORDPRESS_DEST_BACKUP_PATH}/${WEBPARAMS[0]}/DATABASE smg1/backups/wordpress/${WEBPARAMS[0]}/DATABASE --remove -a --overwrite
         cd ${SCRIPT_DIR}
     fi
