@@ -8,7 +8,8 @@
 ! Please USE **ABSOLUTE** path because **RELATIVE** path does NOT work.
 
 !! Colorscheme
-#include "/home/ditatompel/.config/X11/xresources.d/colorscheme/default"
+!#include "/home/ditatompel/.config/X11/xresources.d/colorscheme/default"
+#include "/home/ditatompel/.config/X11/xresources.d/colorscheme/github-dark"
 
 !! Specific program configuration
 ! my default urxvt config
