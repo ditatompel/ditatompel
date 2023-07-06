@@ -70,6 +70,9 @@ _run sxhkd -m -1 > /tmp/sxhkd.log
 ## PCManFM File browser daemon 
 _run pcmanfm -d
 
+## Run thunar daemon
+_run thunar --daemon
+
 ## Music daemon
 _run mpd
 

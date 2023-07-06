@@ -116,9 +116,13 @@ Print
 ctrl + shift + Print
     ~/.local/scripts/system/zipline.sh
 
-# launch file manager
-super + e
+# launch file manager (pcmanFM)
+super + shift + e
     pcmanfm -n
+
+# Launch file manager (Thunar)
+super + e
+    thunar
 
 # close and kill window
 alt + F4
