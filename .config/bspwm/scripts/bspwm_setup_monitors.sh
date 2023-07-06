@@ -65,13 +65,14 @@ fi
 
 ## Wallpaper
 ## If you want to use wallpaper, execute your wallpaper command here.
-## For now, I just want to "use" blank black color with no pict.
 ## Note that using no background may generate warning log:
 ## "background_manager: Failed to get root pixmap, default to black
 ## (is there a wallpaper?)" even you set polybar pseudo-transparency = false.
-#nitrogen --restore &
-#feh --no-fehbg --bg-fill '/path/to/wallpaper/pict1.jpg' '/path/to/wallpaper/pict2.jpg'
-xsetroot -solid "#000000"
+##
+## I forgot who is the one who take ~/Pictures/wallpapers/music.jpg photo,
+## but the ~/Pictures/wallpapers/archlinux-wallpaper/landscape.jpg is from
+## https://github.com/xyproto/archlinux-wallpaper/. 
+feh --no-fehbg --bg-fill "${HOME}/Pictures/wallpapers/music.jpg" "${HOME}/Pictures/wallpapers/archlinux-wallpaper/landscape.jpg"
 
 # Kill and relaunch polybar
 killall -q polybar
