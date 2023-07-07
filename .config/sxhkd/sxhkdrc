@@ -128,12 +128,13 @@ super + e
 alt + F4
     bspc node -k
 
-# terminal emulator
-super + Return
+# terminal emulator (urxvt)
+super + alt + t
     urxvtc
 
-ctrl + alt + t
-    urxvtc -name urxvtfloating -geometry 90x26
+# terminal emulator (kitty)
+ctrl + Return
+    kitty --single-instance
 
 # program launcher
 alt + @space

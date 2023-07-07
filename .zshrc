@@ -122,7 +122,7 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 
-export EDITOR='vim'
+export EDITOR='nvim'
 eval $(thefuck --alias)
 
 # MPV
@@ -141,3 +141,10 @@ alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
 # Aliases for dotfiles GitHub repository
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.ditatompel_dotfiles/ --work-tree=$HOME'
 
+alias vim='nvim'
+
+# List Packages That Depend On Another Package with Pacman (by Adam Douglas)
+# https://www.adamsdesk.com/posts/pacman-reverse-package-dependencies/
+alias pkgdep="pacman -Qq | fzf --preview 'pactree -lur {} | sort' --layout reverse --bind 'enter:execute(pactree -lu {} | sort | less)'"
+
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"

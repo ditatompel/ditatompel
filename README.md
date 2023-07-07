@@ -7,6 +7,9 @@ I put my configs and scripts here for my self, to make me easier moving my machi
 This repo is far from complete, I'll update this repo during my spare time.
 
 ## Packages
+* XOrg (xorg-server, xorg-xsetroot, xorg-xrandr)
+* kitty (default terminal)
+* rxvt-unicode + urxvt-perls ext (alternative terminal)
 * [sxhkd](https://wiki.archlinux.org/title/Sxhkd)
 * [lm_sensors](https://wiki.archlinux.org/title/Lm_sensors) for `polybar` fan speed indicator.
 * vim
@@ -14,6 +17,7 @@ This repo is far from complete, I'll update this repo during my spare time.
 * vim-plug
 * zsh
 * oh-my-zsh
+* feh
 * [PCManFM](https://wiki.archlinux.org/title/PCManFM)
 * [dunst](https://wiki.archlinux.org/title/Dunst)
 * [flameshot](https://wiki.archlinux.org/title/Flameshot) for default screenshot app.
