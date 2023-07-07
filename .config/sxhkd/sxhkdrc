@@ -129,11 +129,11 @@ alt + F4
     bspc node -k
 
 # terminal emulator (urxvt)
-super + alt + t
+ctrl + alt + t
     urxvtc
 
 # terminal emulator (kitty)
-ctrl + Return
+super + Return
     kitty --single-instance
 
 # program launcher
