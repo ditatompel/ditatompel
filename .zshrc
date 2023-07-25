@@ -113,7 +113,7 @@ source /usr/share/nvm/init-nvm.sh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-SAVEHIST=100000
+SAVEHIST=10000
 # Remove duplicate history
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
@@ -122,8 +122,7 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 
-export EDITOR='nvim'
-eval $(thefuck --alias)
+export EDITOR='vim'
 
 # MPV
 # youtube-dl is requried
@@ -141,10 +140,9 @@ alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
 # Aliases for dotfiles GitHub repository
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.ditatompel_dotfiles/ --work-tree=$HOME'
 
-alias vim='nvim'
-
+alias alacritty="WINIT_X11_SCALE_FACTOR=1.33 alacritty"
 # List Packages That Depend On Another Package with Pacman (by Adam Douglas)
 # https://www.adamsdesk.com/posts/pacman-reverse-package-dependencies/
 alias pkgdep="pacman -Qq | fzf --preview 'pactree -lur {} | sort' --layout reverse --bind 'enter:execute(pactree -lu {} | sort | less)'"
 
-[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+[ "$TERM" = "alacritty" ] && alias ssh="TERM=xterm-256color ssh"

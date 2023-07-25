@@ -8,13 +8,14 @@ This repo is far from complete, I'll update this repo during my spare time.
 
 ## Packages
 * XOrg (xorg-server, xorg-xsetroot, xorg-xrandr)
-* kitty (default terminal)
+* alacritty (default terminal)
 * rxvt-unicode + urxvt-perls ext (alternative terminal)
 * [sxhkd](https://wiki.archlinux.org/title/Sxhkd)
 * [lm_sensors](https://wiki.archlinux.org/title/Lm_sensors) for `polybar` fan speed indicator.
 * vim
 * vim-airline
 * vim-plug
+* nvim
 * zsh
 * oh-my-zsh
 * feh

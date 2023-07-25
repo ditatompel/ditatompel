@@ -9,8 +9,8 @@ INTERNAL_MONITOR="LVDS-1"
 EXTERNAL_MONITOR="VGA-1"
 
 ## on first load setup default workspaces
-if [[ "$1" = 0 ]]; then
-  if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
+if [ "$1" = 0 ]; then
+  if xrandr -q | grep "${EXTERNAL_MONITOR} connected"; then
     bspc monitor "$INTERNAL_MONITOR" -d 1 2 3 4 5
     bspc monitor "$EXTERNAL_MONITOR" -d 6 7 8 9 10
     bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
@@ -23,7 +23,7 @@ fi
 ## AUTOSTART
 ## Helper function to check for active process, if not found starts program on the background
 _run() {
-    if ! pgrep -x "${1}" &>/dev/null; then
+    if ! pgrep -x "${1}" >/dev/null; then
         "$@" &
     fi
 }
@@ -44,7 +44,7 @@ bspc config active_border_color       "#2BE491"
 
 ## Use `xprop | grep WM_CLASS` to see WM class (require `xorg-prop` package)
 bspc rule -a Gimp-2.10          desktop='^8'  state=floating follow=on
-bspc rule -a TelegramDesktop    desktop='^5'                 follow=on   split_ratio=0.65                    
+bspc rule -a TelegramDesktop    desktop='^5'                 follow=on   split_ratio=0.65
 bspc rule -a Element            desktop='^5'                 follow=on   split_ratio=0.35
 bspc rule -a Chromium           desktop='^9'
 bspc rule -a Chromium-browser   desktop='^10'
@@ -71,10 +71,10 @@ _run sxhkd -m -1 > /tmp/sxhkd.log
 _run pcmanfm -d
 
 ## Run thunar daemon
-_run thunar --daemon
+#_run thunar --daemon
 
 ## Music daemon
-_run mpd
+#_run mpd
 
 ## Network Manager applet
 _run nm-applet

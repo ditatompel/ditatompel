@@ -120,9 +120,9 @@ ctrl + shift + Print
 super + shift + e
     pcmanfm -n
 
-# Launch file manager (Thunar)
+# Launch file manager (Ranger)
 super + e
-    thunar
+    WINIT_X11_SCALE_FACTOR=1.33 alacritty -e ranger
 
 # close and kill window
 alt + F4
@@ -132,9 +132,9 @@ alt + F4
 ctrl + alt + t
     urxvtc
 
-# terminal emulator (kitty)
+# terminal emulator (alacritty)
 super + Return
-    kitty --single-instance
+    WINIT_X11_SCALE_FACTOR=1.33 alacritty
 
 # program launcher
 alt + @space
