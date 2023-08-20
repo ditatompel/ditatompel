@@ -1,10 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 #title           : qemu-backup-t420.sh
 #description     : Simple command to backup QEMU images in my T420.
 #author          : Christian Ditaputratama <svcadm@ditatompel.com>
-#date            : 2020-12-07
-#last update     : 2022-07-16
-#version         : 0.0.4
 #usage           : ./qemu-backup-t420.sh
 #notes           :
 # This is NOT incremental backup, using zstd instead of gzip compression.
@@ -23,7 +20,7 @@ REMOTE_QEMU_BACKUP_PATH="crypt:/BACKUPS/VMs"
 div=======================================
 
 # Check if script running as root
-if [[ $EUID -eq 0 ]]; then
+if [ "$(id -u)" -eq 0 ]; then
    echo "Do not run this script as root"
    exit 1
 fi
