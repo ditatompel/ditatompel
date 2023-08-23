@@ -50,6 +50,7 @@ bspc rule -a Chromium           desktop='^9'
 bspc rule -a Chromium-browser   desktop='^10'
 bspc rule -a Brave-browser      desktop='^2'
 #bspc rule -a Pcmanfm                         state=floating
+bspc rule -a mpv                              state=floating
 bspc rule -a URxvt:urxvtfloating              state=floating
 bspc rule -a Galculator                       state=floating
 bspc rule -a mplayer2                         state=floating
