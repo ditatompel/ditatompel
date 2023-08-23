@@ -1,9 +1,6 @@
 ## ZSH themes
 #ZSH_THEME="ditatompel"
 
-## codestats
-export DT_CODESTATS_API_KEY="put your CodeStats API key here"
-
 ## Screenshot
 SCREENSHOT_BASE_DIR='/mnt/path/to/your/arch-ss'
 SCREENSHOT_DATE_FOLDER="$(date '+%Y')/$(date '+%m')"

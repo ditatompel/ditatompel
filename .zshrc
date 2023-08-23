@@ -15,8 +15,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # See ~/.local/scripts/myenv.example to see all variables
 source $HOME/.local/scripts/myenv
 
-CODESTATS_API_KEY="$DT_CODESTATS_API_KEY"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -78,7 +76,7 @@ CODESTATS_API_KEY="$DT_CODESTATS_API_KEY"
 plugins=(
     git
     # zsh-autosuggestions
-    codestats # see https://gitlab.com/code-stats/code-stats-zsh
+    zsh-wakatime
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -122,7 +120,7 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # MPV
 # youtube-dl is requried
