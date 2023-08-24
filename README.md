@@ -17,7 +17,6 @@ This repo is far from complete, I'll update this repo during my spare time.
 * vim-plug
 * nvim
 * zsh
-* oh-my-zsh
 * feh
 * [PCManFM](https://wiki.archlinux.org/title/PCManFM)
 * [dunst](https://wiki.archlinux.org/title/Dunst)
