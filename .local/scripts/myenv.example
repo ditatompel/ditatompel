@@ -1,6 +1,3 @@
-## ZSH themes
-#ZSH_THEME="ditatompel"
-
 ## Screenshot
 SCREENSHOT_BASE_DIR='/mnt/path/to/your/arch-ss'
 SCREENSHOT_DATE_FOLDER="$(date '+%Y')/$(date '+%m')"
