@@ -69,7 +69,8 @@ key[Control-Right]="${terminfo[kRIT5]}"
 [[ -n "${key[Control-Right]}" ]] && bindkey -- "${key[Control-Right]}" forward-word
 
 # non-terminfo (using showkey -a) maybe different with yours
-bindkey "^H" backward-kill-word # control Backspace
+#bindkey "^H" backward-kill-word # control Backspace
+bindkey "^[^H" backward-kill-word # Control+Alt+Backspace
 bindkey "^[[3;5~" kill-word # control Delete
 
 # Finally, make sure the terminal is in application mode, when zle is
