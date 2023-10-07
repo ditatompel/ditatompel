@@ -2,11 +2,14 @@
 
 autoload -Uz compinit vcs_info
 compinit
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' select-prompt '%SScroll position: %p%s'
-zstyle ':completion::complete:*' use-cache 1
+zstyle ':completion:*'              menu select
+zstyle ':completion:*'              matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*'              select-prompt '%SScroll position: %p%s'
+zstyle ':completion:*'              list-dirs-first true
+zstyle ':completion:*'              group-name ''
+zstyle ':completion:*:matches'      group 'yes'
+zstyle ':completion:*:default'      list-colors ${(s.:.)LS_COLORS} ''
+zstyle ':completion::complete:*'    use-cache 1
 zstyle ':completion:*:descriptions' format '%U%F{cyan}%d%f%u'
 
 # VCS
