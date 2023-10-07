@@ -16,7 +16,6 @@ TARGET_HOME_DIR="/home/ditatompel"
 BACKUP_DIR='/mnt/hdd2/BACKUPS/SYSBACKUP/T420'
 
 # end of basic configuration
-div=======================================
 
 # Check if script running as root
 if [ "$(id -u)" -ne 0 ]; then
@@ -67,7 +66,7 @@ else
           continue ;;
         *)
           echo "Dump database ${DB}..."
-          mariadb-dump ${DB} > "${BACKUP_DIR}/DATABASE/dump/${DB}.sql" ;;
+          mariadb-dump "${DB}" > "${BACKUP_DIR}/DATABASE/dump/${DB}.sql" ;;
       esac
   done
 
