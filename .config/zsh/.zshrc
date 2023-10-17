@@ -1,10 +1,16 @@
 # Created by ditatompel for 5.9
 
-HISTSIZE=10000
+HISTSIZE=10500
 SAVEHIST=10000
 
-setopt HIST_SAVE_NO_DUPS # Do not write duplicate
-setopt promptsubst
+# options. See `man zshoptions
+setopt PROMPT_SUBST
+
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
 
 # load the prompt
 . "${ZDOTDIR}/prompt.zsh"
