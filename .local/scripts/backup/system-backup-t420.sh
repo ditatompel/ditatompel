@@ -1,12 +1,11 @@
 #!/bin/sh
-#title           : system_backup_t420.sh
+#title           : system-backup-t420.sh
 #description     : Simple command to backup /etc, /srv, and my home dir.
 #author          : Christian Ditaputratama <svcadm@ditatompel.com>
-#version         : 0.0.5
-#usage           : ./system_backup_t420.sh
+#version         : 0.0.6
+#usage           : sudo ./system-backup-t420.sh
 #notes           :
-# This is NOT incremental backup and make sure
-# destination backup dir is mounted.
+# This is NOT incremental backup and make sure destination backup dir is mounted.
 #==============================================================================
 
 # Home user dir to backup
@@ -33,25 +32,29 @@ flock -n 9 || exit
 pacman -Qqe > "${BACKUP_DIR}/pkglist.txt"
 
 rsync -avh "${TARGET_HOME_DIR}/" "${BACKUP_DIR}${TARGET_HOME_DIR}/" \
-    --exclude=".cache"              \
-    --exclude=".mozilla"            \
-    --exclude=".thumbnails"         \
-    --exclude=".thunderbird"        \
-    --exclude=".local/share/winbox" \
-    --exclude=".winbox"             \
-    --exclude=".nvm"                \
-    --exclude=".npm"                \
-    --exclude=".rvm"                \
-    --exclude=".gradle"             \
-    --exclude=".rustup"             \
-    --exclude="go"                  \
-    -P                              \
-    --delete-after
+  --exclude=".cache"              \
+  --exclude="*/node_modules*"     \
+  --exclude=".mozilla"            \
+  --exclude=".thumbnails"         \
+  --exclude=".thunderbird"        \
+  --exclude=".local/share"        \
+  --exclude=".winbox"             \
+  --exclude=".nvm"                \
+  --exclude=".npm"                \
+  --exclude=".rvm"                \
+  --exclude=".gradle"             \
+  --exclude=".rustup"             \
+  --exclude="go"                  \
+  -P                              \
+  --delete-after
 
 rsync -avh "/etc" "${BACKUP_DIR}/" -P --delete-after
 
 # Web Dev Files
-rsync -avh "/srv" "${BACKUP_DIR}/" -P --delete-after
+rsync -avh                    \
+  --exclude="*/node_modules*" \
+  /srv "${BACKUP_DIR}/"       \
+  -P --delete-after
 
 # DUMP MySQL / MariaDB
 ISMARIADBUP=$(pgrep mariadb | wc -l);
@@ -59,7 +62,7 @@ if [ "${ISMARIADBUP}" -ne 1 ]; then
     echo "MariaDB process not running! Skip dumping MariaDB database..."
 else
     echo "Backing up MariaDB..."
-    
+
     for DB in $(mariadb -e 'show databases' -s --skip-column-names); do
       case "${DB}" in
         *_schema)
@@ -69,5 +72,4 @@ else
           mariadb-dump "${DB}" > "${BACKUP_DIR}/DATABASE/dump/${DB}.sql" ;;
       esac
   done
-
 fi
