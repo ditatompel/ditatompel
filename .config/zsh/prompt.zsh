@@ -47,7 +47,7 @@ precmd() {
     fi
     unset timer
   fi
-  
+
   USER_FMT="%F{green}%n%f"
   if [ "$(id -u)" -eq 0 ]; then
     USER_FMT="%F{red}%n%f"
