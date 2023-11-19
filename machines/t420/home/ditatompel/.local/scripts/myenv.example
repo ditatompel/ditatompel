@@ -23,13 +23,13 @@ MASTER_REMOTE_MYSQL_PASS=""
 
 ## Individual server vars
 ### Wordpress sites in my remote server
-WORDPRESS_SERVER_IP="xxx.xxx.xxx.xxx"
-WORDPRESS_DEST_BACKUP_PATH="/path/to/local/backup/dir"
+WP_SERVER_IP="xxx.xxx.xxx.xxx"
+WP_DEST_BACKUP_PATH="/path/to/local/backup/dir"
 # Array of WP site, `IFS` property separate by `|`
 # `IFS[0]` = wp shortname, used to organize backup folder location on S3 or local filesystem
 # `IFS[1]` = Wordpress website directory (remote)
 # `IFS[2]` = MySQL DB Name
-WORDPRESS_WEBSITES=(
+WP_SITES=(
     "example.com|/var/www/example.com|wp_example"  # 1st website
     "another.example.com|/var/www/another.example.com|wp_another_example"  # 2nd website
 )
