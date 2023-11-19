@@ -1,0 +1,49 @@
+# TODO: Review sync ditatompel's .local files
+# TODO: Sync system wide config files
++ /home/
++ /home/ditatompel/
+# ditatompel's homedir dotfiles
++ /home/ditatompel/.vimrc
++ /home/ditatompel/.xinitrc
++ /home/ditatompel/.zshenv
+# ditatompel's .config file
++ /home/ditatompel/.config/
+# bspwm config
++ /home/ditatompel/.config/bspwm/
+- /home/ditatompel/.config/bspwm/*.old
++ /home/ditatompel/.config/bspwm/***
+# rofi config
++ /home/ditatompel/.config/rofi/
++ /home/ditatompel/.config/rofi/config.rasi
++ /home/ditatompel/.config/rofi/scripts/
++ /home/ditatompel/.config/rofi/scripts/modi-main.sh
++ /home/ditatompel/.config/rofi/themes/
++ /home/ditatompel/.config/rofi/themes/main.rasi
++ /home/ditatompel/.config/rofi/themes/shared.rasi
++ /home/ditatompel/.config/rofi/themes/colorschemes/
++ /home/ditatompel/.config/rofi/themes/colorschemes/joygrayful.rasi
+# sxhkdrc config
++ /home/ditatompel/.config/sxhkd/
++ /home/ditatompel/.config/sxhkd/**
+# X11
++ /home/ditatompel/.config/X11/
++ /home/ditatompel/.config/X11/***
+# zsh config
++ /home/ditatompel/.config/zsh/
++ /home/ditatompel/.config/zsh/prompt.zsh
++ /home/ditatompel/.config/zsh/.zshrc
+#
+# ditatompel's ~/.local files
++ /home/ditatompel/.local/
++ /home/ditatompel/.local/scripts/
++ /home/ditatompel/.local/scripts/rsync-include
++ /home/ditatompel/.local/scripts/sync-git.sh
++ /home/ditatompel/.local/scripts/myenv.example
++ /home/ditatompel/.local/scripts/backup/
++ /home/ditatompel/.local/scripts/backup/qemu-backup.sh
++ /home/ditatompel/.local/scripts/backup/system-backup-t420.sh
++ /home/ditatompel/.local/scripts/backup/wordpress-backup.sh
++ /home/ditatompel/.local/scripts/system/
++ /home/ditatompel/.local/scripts/system/i3lock.sh
++ /home/ditatompel/.local/scripts/system/screenshot.sh
+- *
