@@ -1,36 +1,45 @@
-# My Personal dotfiles
+# T420 Config
 
-This is my personal config file. This dotfiles repo is not intended to "rice" your desktop. Maybe this dotfiles repo is one of most boring desktop you ever see, trust me! No compositor, no transparency, no animation, nothing. Just basic BSPWM with polybar plus my most used apps.
+This is my personal laptop config file. The configurations under this directory is not intended to "rice" your desktop. Maybe this dotfiles repo is one of most boring desktop you ever see, trust me! No compositor, no transparency, no animation, nothing. Just basic BSPWM with polybar plus my most used app config.
 
 I put my configs and scripts here for my self, to make me easier moving my machine to the new one if something bad happen to my beloved laptop. But, if you find it useful for you, just clone and edit to fit with your need.
 
 This repo is far from complete, I'll update this repo during my spare time.
 
 ## Packages
-* XOrg (xorg-server, xorg-xsetroot, xorg-xrandr)
-* alacritty (default terminal)
-* rxvt-unicode + urxvt-perls ext (alternative terminal)
-* [sxhkd](https://wiki.archlinux.org/title/Sxhkd)
-* [lm_sensors](https://wiki.archlinux.org/title/Lm_sensors) for `polybar` fan speed indicator.
-* vim
-* vim-airline
-* vim-plug
-* nvim
-* zsh
-* feh
-* [PCManFM](https://wiki.archlinux.org/title/PCManFM)
-* [dunst](https://wiki.archlinux.org/title/Dunst)
-* [flameshot](https://wiki.archlinux.org/title/Flameshot) for default screenshot app.
 
 ### Required command-line utilities
-* `rsync` ([Arch Wiki](https://wiki.archlinux.org/title/Rsync)). Most of my backup script use rsync (local).
-* `rclone` for remote and _encrypted_ backup.
-* `bc`
-* `jq`
-* [imagemagick](https://archlinux.org/packages/?name=imagemagick) for alternate screenshot. Probably you already have `imagemagick` installed on your system. See [~/.local/scripts/system/screenshot.sh](.local/scripts/system/screenshot.sh). For more information about screenshot options.
 
+- `rsync`: Most of my backup scripts use rsync. [rsync.samba.org](https://rsync.samba.org/) | [rsync Arch Wiki](https://wiki.archlinux.org/title/Rsync).
+- `rclone` for some remote and _"encrypted"_ backup. [rclone.org](https://rclone.org/).
+- `bc` for arbitrary precision numeric processing. [GNU bc](https://www.gnu.org/software/bc/).
+- `jq` for command-line JSON processor. [github.com/jqlang/jq](https://github.com/jqlang/jq).
+- [imagemagick](https://archlinux.org/packages/?name=imagemagick) for alternate screenshot. [ImageMagick Arch Wiki](https://wiki.archlinux.org/title/ImageMagick). Probably you already have `imagemagick` installed on your system. See [./home/ditatompel/.local/scripts/system/screenshot.sh](./home/ditatompel/.local/scripts/system/screenshot.sh). For more information about screenshot options.
+
+### Display
+
+- **XOrg** (`xorg-server`, `xorg-xsetroot`, `xorg-xrandr`). [Xorg Arch Wiki](https://wiki.archlinux.org/title/Xorg).
+- `bspwm` + `sxhkd`. [bspwm Arch Wiki](https://wiki.archlinux.org/title/Bspwm) | [Sxhkd Arch Wiki](https://wiki.archlinux.org/title/Sxhkd).
+- [lm_sensors](https://wiki.archlinux.org/title/Lm_sensors) for `polybar` fan speed indicator.
+- `feh` Image viewer and background setter. [feh.finalrewind.org](https://feh.finalrewind.org/) | [feth Arch Wiki](https://wiki.archlinux.org/title/Feh).
+- `pcmanfm` GUI file manager. [PCManFM Arch Wki](https://wiki.archlinux.org/title/PCManFM).
+- `dunst` notification daemon. [dunst-project.org](https://dunst-project.org/) | [Dunst](https://wiki.archlinux.org/title/Dunst)
+- `flameshot` for default screenshot app. [flameshot.org](https://flameshot.org/) [Flameshot Arch Wiki](https://wiki.archlinux.org/title/Flameshot).
+
+### Shell & Terminal
+
+- `zsh` default shell (vanilla). [zsh.org](https://www.zsh.org/) | [Zsh Arch Wiki](https://wiki.archlinux.org/title/Zsh).
+- `alacritty` as default terminal. [github.com/alacritty/alacritty](https://github.com/alacritty/alacritty) | [Arch Wiki](https://wiki.archlinux.org/title/Alacritty).
+- `rxvt-unicode` + `urxvt-perls` extension for alternative legacy terminal. [Arch Wiki](https://wiki.archlinux.org/title/Rxvt-unicode).
+- `tmux` terminal miltiplexer. [github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki) | [tmux Arch Wiki](https://wiki.archlinux.org/title/Tmux).
+
+### Editors
+
+- `vim` with `vim-airline` and `vim-plug` plugins. [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
+- `nvim` for coding session (using [NvChad](https://github.com/NvChad/NvChad) vim distribution). [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
 
 ## Hardware Topology
+
 ```
 lstopo -.ascii
 ┌────────────────────────────────────────────────────────────────────────────────┐
