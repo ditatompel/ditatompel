@@ -56,6 +56,7 @@ bspc rule -a Galculator                       state=floating
 bspc rule -a mplayer2                         state=floating
 bspc rule -a Gpicview                         state=floating
 bspc rule -a XpdfReader                       state=floating
+bspc rule -a dude.exe                         state=floating
 bspc rule -a Kupfer.py                                       focus=on
 bspc rule -a Screenkey                                       manage=off
 bspc rule -a 'Brave-browser:brave-browser (./Dat/Igno)'      desktop='^10'
