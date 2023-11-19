@@ -104,7 +104,7 @@ alias ip="ip -c=auto"
 
 # Command app Aliases
 alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/src/ditatompel-dotfiles/ --work-tree=$HOME'
+# alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/src/ditatompel-dotfiles/ --work-tree=$HOME'
 alias alacritty="WINIT_X11_SCALE_FACTOR=1.33 alacritty"
 # List Packages That Depend On Another Package with Pacman (by Adam Douglas)
 # https://www.adamsdesk.com/posts/pacman-reverse-package-dependencies/
