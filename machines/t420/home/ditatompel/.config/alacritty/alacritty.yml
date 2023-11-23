@@ -10,21 +10,24 @@ env:
   #TERM: alacritty
   TERM: xterm-256color
 
+# 23 Nov 2023: After updating system using `pacman -Syu`, nerd fonts got messed
+# up. Use `fc-list : family style | grep "FontName"` and adjust the font config
+# with the new font name.
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: Regular
 
   bold:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: Bold
 
   italic:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: Italic
 
   bold_italic:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono NF
     style: Bold Italic
 
   # Point size
