@@ -1,9 +1,5 @@
 call plug#begin('~/.vim/plugged')
-" ... your other plugins
-
-Plug 'wakatime/vim-wakatime'
-"Plug 'https://github.com/ActivityWatch/aw-watcher-vim.git'
-
+  Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype'])
@@ -16,7 +12,23 @@ set tabstop=4                  " tab stops at 4 spaces
 set shiftwidth=4               " default shift
 set expandtab                  " default tabs
 
+" Set to auto read when a file is changed from the other session
+set autoread
+au FocusGained,BufEnter * silent! checktime
+
+" Turn backup file off
+set nobackup
+set nowb
+set noswapfile
+
+" Searching
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
 " Syntax
+syntax enable
 " nginx
 au BufRead,BufNewFile *.nginx set ft=nginx
 au BufRead,BufNewFile */etc/nginx/* set ft=nginx
@@ -24,3 +36,5 @@ au BufRead,BufNewFile */usr/local/nginx/conf/* set ft=nginx
 au BufRead,BufNewFile nginx.conf set ft=nginx
 " yaml indentation
 au FileType yaml setlocal tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
+
