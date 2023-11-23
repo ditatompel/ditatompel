@@ -8,6 +8,9 @@
 + /home/ditatompel/.zshenv
 # ditatompel's .config file
 + /home/ditatompel/.config/
+# alacritty config
++ /home/ditatompel/.config/alacritty
++ /home/ditatompel/.config/alacritty/***
 # bspwm config
 + /home/ditatompel/.config/bspwm/
 - /home/ditatompel/.config/bspwm/*.old
