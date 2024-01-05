@@ -17,22 +17,18 @@ LOCAL_QEMU_BACKUP_PATH="/mnt/hdd2/BACKUPS/VMs"
 REMOTE_QEMU_BACKUP_PATH="crypt:/BACKUPS/VMs"
 
 # end of basic configuration
-div=======================================
 
 # Check if script running as root
-if [ "$(id -u)" -eq 0 ]; then
-   echo "Do not run this script as root"
-   exit 1
-fi
+[ "$(id -u)" -eq 0 ] && echo "Do not run this script as root" && exit 1
 
 # Lockfile
 LOCKFILE="/tmp/myqemubackup.lock"
 exec 9>"${LOCKFILE}"
 flock -n 9 || exit
 
-cd ${QEMU_IMAGE_PATH}
+cd ${QEMU_IMAGE_PATH} || exit 1
 for qcow in *;
 do
-   tar -I 'zstd -9 -v --sparse' -Scvf ${LOCAL_QEMU_BACKUP_PATH}/${qcow}.tar.zst ${qcow};
-   rclone copy ${LOCAL_QEMU_BACKUP_PATH}/${qcow}.tar.zst ${REMOTE_QEMU_BACKUP_PATH}/ -P
+  tar -I 'zstd -9 -v --sparse' -Scvf "${LOCAL_QEMU_BACKUP_PATH}/${qcow}.tar.zst" "${qcow}"
+  rclone copy "${LOCAL_QEMU_BACKUP_PATH}/${qcow}.tar.zst" "${REMOTE_QEMU_BACKUP_PATH}/" -P
 done
