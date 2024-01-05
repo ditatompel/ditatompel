@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'wakatime/vim-wakatime'
 call plug#end()
 
-let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype'])
+" let g:airline_section_x = airline#section#create_right(['tagbar', 'filetype'])
 
 " Custom command :Sw to save and write file as superuser
 command! -nargs=0 Sw w !sudo tee % > /dev/null
