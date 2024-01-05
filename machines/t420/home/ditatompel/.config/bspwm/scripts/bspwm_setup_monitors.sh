@@ -77,7 +77,7 @@ feh --no-fehbg --bg-fill "${HOME}/Pictures/wallpapers/archlinux-wallpaper/sunset
 killall -q polybar
 while pgrep -u $UID -x polybar > /dev/null; do sleep 2; done
 
-if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
+if [[ $(xrandr -q | grep -e "^${EXTERNAL_MONITOR} connected") ]]; then
   polybar --reload primary -c ~/.config/polybar/bspwm-config.ini </dev/null >/var/tmp/polybar-primary.log 2>&1 200>&- &
   polybar --reload secondary -c ~/.config/polybar/bspwm-config.ini </dev/null >/var/tmp/polybar-secondary.log 2>&1 200>&- &
 else
