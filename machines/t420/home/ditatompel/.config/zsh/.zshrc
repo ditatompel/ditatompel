@@ -117,8 +117,8 @@ export MANROFFOPT="-P -c"
 
 # PATHs
 #######
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# Go bin and RVM
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin:$HOME/.rvm/bin"
 
 # App functions
 ###############
