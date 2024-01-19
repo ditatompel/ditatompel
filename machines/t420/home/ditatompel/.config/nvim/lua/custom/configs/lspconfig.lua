@@ -23,7 +23,7 @@ lspconfig.gopls.setup {
     -- see https://github.com/golang/tools/tree/master/gopls
     gopls = {
       completeUnimported = true,
-      usePlaceholder = true,
+      usePlaceholders = true,
       analyses = {
         unusedparams = true,
       },
