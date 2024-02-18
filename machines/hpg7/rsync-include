@@ -1,0 +1,40 @@
+# TODO: Review sync ditatompel's .local files
+# TODO: Sync system wide config files
++ /etc/
++ /etc/default/
++ /etc/default/grub
++ /etc/X11/
++ /etc/X11/xinit/
++ /etc/X11/xinit/xserverrc
+# Home dirs
++ /home/
++ /home/ditatompel/
+# ditatompel's homedir dotfiles
++ /home/ditatompel/.vimrc
++ /home/ditatompel/.xinitrc
++ /home/ditatompel/.zshenv
+# ditatompel's .config file
++ /home/ditatompel/.config/
+# alacritty config
++ /home/ditatompel/.config/alacritty
++ /home/ditatompel/.config/alacritty/***
+# bspwm config
++ /home/ditatompel/.config/bspwm/
+- /home/ditatompel/.config/bspwm/*.old
++ /home/ditatompel/.config/bspwm/***
+# sxhkdrc config
++ /home/ditatompel/.config/sxhkd/
++ /home/ditatompel/.config/sxhkd/**
+# X11
++ /home/ditatompel/.config/X11/
++ /home/ditatompel/.config/X11/***
+# zsh config
++ /home/ditatompel/.config/zsh/
++ /home/ditatompel/.config/zsh/prompt.zsh
++ /home/ditatompel/.config/zsh/.zshrc
+# nvim config
++ /home/ditatompel/.config/nvim
++ /home/ditatompel/.config/nvim/lua
++ /home/ditatompel/.config/nvim/lua/custom
++ /home/ditatompel/.config/nvim/lua/custom/***
+- *

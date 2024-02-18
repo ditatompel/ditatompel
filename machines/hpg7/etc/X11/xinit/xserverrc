@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# The `-ardelay` and `-arinterval` are the same with `xset r rate 250 30`.
+# I add the options here because when a keyboard is plugged in, the `xset`
+# command from `~/.xinitrc` is reseted.
+#
+# See also other modified default grub cmdline in `/etc/default/grub`
+# (`atkbd.softrepeat=1`).
+exec /usr/bin/X -nolisten tcp -ardelay 250 -arinterval 30 "$@"
