@@ -3,9 +3,19 @@
 + /etc/
 + /etc/default/
 + /etc/default/grub
+# X11
 + /etc/X11/
 + /etc/X11/xinit/
 + /etc/X11/xinit/xserverrc
+# Nginx
++ /etc/nginx/
++ /etc/nginx/nginx.conf
++ /etc/nginx/conf.d
++ /etc/nginx/conf.d/***
+# phpMyAdmin
++ /etc/webapps
++ /etc/webapps/phpmyadmin
++ /etc/webapps/phpmyadmin/config.inc.php
 # Home dirs
 + /home/
 + /home/ditatompel/
