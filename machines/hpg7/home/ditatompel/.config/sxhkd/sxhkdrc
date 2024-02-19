@@ -155,3 +155,5 @@ super + F1
 # Lock Screen
 super + shift + F2
     ~/.local/scripts/system/i3lock.sh
+
+# vim: set ft=sxhkdrc:
