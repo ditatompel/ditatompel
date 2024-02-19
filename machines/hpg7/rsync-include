@@ -15,7 +15,7 @@
 # phpMyAdmin
 + /etc/webapps
 + /etc/webapps/phpmyadmin
-+ /etc/webapps/phpmyadmin/config.inc.php
++ /etc/webapps/phpmyadmin/config.inc.example.php
 # Home dirs
 + /home/
 + /home/ditatompel/
