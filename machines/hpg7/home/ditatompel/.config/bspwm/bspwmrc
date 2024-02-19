@@ -68,7 +68,7 @@ xsetroot -cursor_name left_ptr &
 sxhkd -m -1 > /tmp/sxhkd.log &
 
 ## PCManFM File browser daemon 
-pcmanfm -d
+_run pcmanfm -d
 
 ## Music daemon
 #mpd &
