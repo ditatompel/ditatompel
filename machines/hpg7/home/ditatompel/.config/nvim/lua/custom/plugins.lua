@@ -44,6 +44,7 @@ local plugins = {
         "yaml-language-server",
         "rust-analyzer",
         "prettierd",
+        "ltex-ls",
       },
     },
   },

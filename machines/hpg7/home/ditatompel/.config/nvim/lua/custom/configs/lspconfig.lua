@@ -49,3 +49,33 @@ lspconfig.rust_analyzer.setup {
   capabilities = capabilities,
   filetypes = { "rust" },
 }
+
+lspconfig.ltex.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "markdown", "md", "tex" },
+  settings = {
+    ltex = {
+      language = "en-US",
+      enabled = {
+        "bibtex",
+        "gitcommit",
+        "markdown",
+        "tex",
+        "restructuredtext",
+        "latex",
+        "context",
+        "html",
+        "xhtml",
+      },
+      -- setenceCacheSize = 2000,
+      additionalRules = {
+        enablePickyRules = true,
+      },
+      trace = { server = "verbose" },
+      -- disabledRules = {},
+      -- hiddenFalsePositives = {},
+      -- languageToolHttpServerUri = "http://127.0.0.1:41000/",
+    },
+  },
+}
