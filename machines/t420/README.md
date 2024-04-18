@@ -1,5 +1,7 @@
 # T420 Config
 
+> **NOTE**: This machine is **DEAD**, RIP! Everything under this directory will not be updated again!
+
 This is my personal laptop config file. The configurations under this directory is not intended to "rice" your desktop. Maybe this dotfiles repo is one of most boring desktop you ever see, trust me! No compositor, no transparency, no animation, nothing. Just basic BSPWM with polybar plus my most used app config.
 
 I put my configs and scripts here for my self, to make me easier moving my machine to the new one if something bad happen to my beloved laptop. But, if you find it useful for you, just clone and edit to fit with your need.
@@ -36,7 +38,7 @@ This repo is far from complete, I'll update this repo during my spare time.
 ### Editors
 
 - `vim` with `vim-airline` and `vim-plug` plugins. [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
-- `nvim` for coding session (using [NvChad](https://github.com/NvChad/NvChad) vim distribution). [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
+- `nvim` for coding session (using [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)). [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
 
 ## Hardware Topology
 

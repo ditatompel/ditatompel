@@ -37,9 +37,7 @@
 + /home/ditatompel/.config/zsh/.zshrc
 # nvim config
 + /home/ditatompel/.config/nvim
-+ /home/ditatompel/.config/nvim/lua
-+ /home/ditatompel/.config/nvim/lua/custom
-+ /home/ditatompel/.config/nvim/lua/custom/***
++ /home/ditatompel/.config/nvim/***
 #
 # ditatompel's ~/.local files
 + /home/ditatompel/.local/
