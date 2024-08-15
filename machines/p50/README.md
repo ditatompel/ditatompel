@@ -1,8 +1,15 @@
 # ThinkPad P50 Config
 
-Replacement for my [../t420](ThinkPad T420).
+Replacement for my [ThinkPad T420](../t420).
 
 This repo is far from complete, I'll update this repo during my spare time.
+
+## Packages
+
+### Editors
+
+- `vim`. [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
+- `nvim` for coding session ([config](./home/ditatompel/.config/nvim)). [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
 
 ## Hardware Topology
 

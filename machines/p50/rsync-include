@@ -1,0 +1,19 @@
+# TODO: Review sync ditatompel's .local files
+# TODO: Sync system wide config files
++ /home/
++ /home/ditatompel/
++ /home/ditatompel/.config/
+# nvim config
++ /home/ditatompel/.config/nvim/
++ /home/ditatompel/.config/nvim/init.lua
++ /home/ditatompel/.config/nvim/.gitignore
++ /home/ditatompel/.config/nvim/.stylua.toml
++ /home/ditatompel/.config/nvim/README.md
++ /home/ditatompel/.config/nvim/init.lua
++ /home/ditatompel/.config/nvim/LICENSE.md
++ /home/ditatompel/.config/nvim/lua/
++ /home/ditatompel/.config/nvim/lua/options.lua
++ /home/ditatompel/.config/nvim/lua/custom/***
++ /home/ditatompel/.config/nvim/lua/kickstart/***
+# important: exclude the rest
+- *
