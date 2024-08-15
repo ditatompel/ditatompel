@@ -13,6 +13,7 @@
 + /home/ditatompel/.config/nvim/LICENSE.md
 + /home/ditatompel/.config/nvim/lua/
 + /home/ditatompel/.config/nvim/lua/options.lua
++ /home/ditatompel/.config/nvim/lua/keymaps.lua
 + /home/ditatompel/.config/nvim/lua/custom/***
 + /home/ditatompel/.config/nvim/lua/kickstart/***
 # important: exclude the rest
