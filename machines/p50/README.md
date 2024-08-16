@@ -27,6 +27,7 @@ This repo is far from complete, I'll update this repo during my spare time.
 ## Software
 
 - Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub)).
+- WM: `bspwm` | [bspwm Arch Wiki](https://wiki.archlinux.org/title/Bspwm) | [Sxhkd Arch Wiki](https://wiki.archlinux.org/title/Sxhkd).
 
 ### Shell & Terminal
 
