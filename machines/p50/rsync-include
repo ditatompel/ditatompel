@@ -34,5 +34,8 @@
 + /etc/pacman.d/
 + /etc/pacman.d/hooks/
 + /etc/pacman.d/hooks/nvidia.hook
++ /etc/X11/
++ /etc/X11/xorg.conf.d/
++ /etc/X11/xorg.conf.d/30-touchpad.conf
 # important: exclude the rest
 - *
