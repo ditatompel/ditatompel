@@ -17,5 +17,9 @@
 + /home/ditatompel/.config/nvim/lua/lazy-plugins.lua
 + /home/ditatompel/.config/nvim/lua/custom/***
 + /home/ditatompel/.config/nvim/lua/kickstart/***
+# /etc configs
++ /etc/
++ /etc/default/
++ /etc/default/grub
 # important: exclude the rest
 - *
