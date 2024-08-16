@@ -8,18 +8,18 @@ This repo is far from complete, I'll update this repo during my spare time.
 
 ### System
 
-- Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub).
+- Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub)).
 
 ### Shell & Terminal
 
-- vanilla `zsh` [zsh.org](https://www.zsh.org/) | [Zsh Arch Wiki](https://wiki.archlinux.org/title/Zsh).
-- `alacritty` [github.com/alacritty/alacritty](https://github.com/alacritty/alacritty) | [Arch Wiki](https://wiki.archlinux.org/title/Alacritty).
-- `tmux` terminal miltiplexer. [github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki) | [tmux Arch Wiki](https://wiki.archlinux.org/title/Tmux).
+- vanilla `zsh` | [zsh.org](https://www.zsh.org/) | [Zsh Arch Wiki](https://wiki.archlinux.org/title/Zsh).
+- `alacritty` terminal | [github.com/alacritty/alacritty](https://github.com/alacritty/alacritty) | [Arch Wiki](https://wiki.archlinux.org/title/Alacritty).
+- `tmux` terminal miltiplexer | [github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki) | [tmux Arch Wiki](https://wiki.archlinux.org/title/Tmux).
 
 ### Editors
 
-- `vim`. [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
-- `nvim` for coding session ([config](./home/ditatompel/.config/nvim)). [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
+- `vim` | [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
+- `nvim` ([config](./home/ditatompel/.config/nvim)) | [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
 
 ## Hardware Topology
 
