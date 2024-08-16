@@ -1,0 +1,29 @@
+[Trigger]
+Operation=Install
+Operation=Upgrade
+Operation=Remove
+Type=Package
+# If you use other base driver than `nvidia`
+# (for example: `nvidia-open` or `nvidia-lts`), replace `nvidia` value below
+# with your base driver.
+# Example:
+#     Target=nvidia-lts
+Target=nvidia
+# If running a different kernel (for example: `linux-lts`),
+# modify below to match with your kernel.
+# Example:
+#     Target=linux-lts
+Target=linux
+
+[Action]
+Description=Updating NVIDIA module in initcpio
+Depends=mkinitcpio
+When=PostTransaction
+NeedsTargets
+# Note: The complication in the Exec line below is in order to avoid running
+# mkinitcpio multiple times if both nvidia and linux get updated.
+# In case this does not bother you, the Target=linux and NeedsTargets lines
+# may be dropped, and the Exec line may be reduced
+# to simply Exec=/usr/bin/mkinitcpio -P.
+# See: https://wiki.archlinux.org/title/NVIDIA#pacman_hook
+Exec=/bin/sh -c 'while read -r trg; do case $trg in linux*) exit 0; esac; done; /usr/bin/mkinitcpio -P'

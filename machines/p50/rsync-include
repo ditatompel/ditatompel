@@ -22,5 +22,8 @@
 + /etc/mkinitcpio.conf
 + /etc/default/
 + /etc/default/grub
++ /etc/pacman.d/
++ /etc/pacman.d/hooks/
++ /etc/pacman.d/hooks/nvidia.hook
 # important: exclude the rest
 - *
