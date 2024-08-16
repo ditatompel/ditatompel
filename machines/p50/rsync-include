@@ -19,6 +19,7 @@
 + /home/ditatompel/.config/nvim/lua/kickstart/***
 # /etc configs
 + /etc/
++ /etc/mkinitcpio.conf
 + /etc/default/
 + /etc/default/grub
 # important: exclude the rest
