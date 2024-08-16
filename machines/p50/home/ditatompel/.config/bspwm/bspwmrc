@@ -1,0 +1,68 @@
+#!/bin/sh
+## bspwm dual monitor config
+## Based on miikanissi's config: https://github.com/miikanissi/dotfiles
+## For more detailed information, read:
+## https://miikanissi.com/blog/hotplug-dual-monitor-setup-bspwm/
+
+INTERNAL_MONITOR="eDP-1"
+EXTERNAL_MONITOR="HDMI-1"
+
+## on first load, setup default workspaces
+if [ "$1" = 0 ]; then
+  if xrandr -q | grep "${EXTERNAL_MONITOR} connected"; then
+    bspc monitor "$INTERNAL_MONITOR" -d 1 2 3 4 5
+    bspc monitor "$EXTERNAL_MONITOR" -d 6 7 8 9 10
+    bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
+  else
+    bspc monitor "$INTERNAL_MONITOR" -d 1 2 3 4 5 6 7 8 9 10
+  fi
+fi
+
+# Helper function to check for active process,
+# if not found starts program on the background.
+_run() {
+  if ! pgrep -x "${1}" >/dev/null; then
+    "$@" &
+  fi
+}
+
+bspc config border_width            2
+bspc config window_gap              6
+bspc config top_padding             32
+
+bspc config split_ratio             0.5
+bspc config borderless_monocle      true
+bspc config gapless_monocle         true
+
+bspc config single_monocle          true
+bspc config focus_follows_pointer   true
+
+bspc config focused_border_color    "#63C5EA"
+bspc config active_border_color     "#2BE491"
+
+## Use `xprop | grep WM_CLASS` to see WM class (require `xorg-xprop` package)
+bspc rule -a firefox-developer-edition desktop='^2' follow=on
+
+bspc rule -a mpv         state=floating
+
+# mouse, cursor, fonts
+xsetroot -cursor_name left_ptr &
+# xset +fp ~/.fonts &
+# xset fp rehash &
+# fc-cache -fv &
+
+_run sxhkd -m -1 > /tmp/sxhkd.log
+
+# PCManFM File browser daemon 
+_run pcmanfm -d
+
+# Network Manager applet
+_run nm-applet
+
+# Compositor, If you want to run one, execute here
+# _run picom
+
+# Setup monitors, polybar and wallpaper
+~/.config/bspwm/scripts/bspwm_setup_monitors.sh &
+
+# vim: set ts=2 sw=2 et:

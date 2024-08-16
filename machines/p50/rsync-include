@@ -23,6 +23,9 @@
 + /home/ditatompel/.config/nvim/lua/lazy-plugins.lua
 + /home/ditatompel/.config/nvim/lua/custom/***
 + /home/ditatompel/.config/nvim/lua/kickstart/***
+# bspwm config
++ /home/ditatompel/.config/bspwm/
++ /home/ditatompel/.config/bspwm/***
 # /etc configs
 + /etc/
 + /etc/mkinitcpio.conf
