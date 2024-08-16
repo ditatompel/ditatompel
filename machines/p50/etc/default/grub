@@ -1,11 +1,26 @@
 # GRUB boot loader configuration
 
+# Use the `grub-mkconfig` tool to generate `/boot/grub/grub.cfg`:
+# `grub-mkconfig -o /boot/grub/grub.cfg`
+
 GRUB_DEFAULT=0
-GRUB_TIMEOUT=5
+
+# How many seconds after the menu is displayed, unless a key is pressed.
+# The default is ‘5’. Set to ‘0’ to boot immediately without displaying
+# the menu, or to ‘-1’ to wait indefinitely.
+GRUB_TIMEOUT=0
+
 GRUB_HIDDEN_TIMEOUT=1
 GRUB_RECORDFAIL_TIMEOUT=$GRUB_TIMEOUT
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+
+# Command-line arguments to add to menu entries for the Linux kernel.
+# Unless ‘GRUB_DISABLE_RECOVERY’ is set to ‘true’, two menu entries will be
+# generated for each Linux kernel:
+# one default entry and one entry for recovery mode.
+# This option lists command-line arguments to add only to the default
+# menu entry, after those listed in ‘GRUB_CMDLINE_LINUX’.
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed

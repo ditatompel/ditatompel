@@ -6,6 +6,10 @@ This repo is far from complete, I'll update this repo during my spare time.
 
 ## Packages
 
+### System
+
+- Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub).
+
 ### Editors
 
 - `vim`. [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
