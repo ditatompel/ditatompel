@@ -2,7 +2,12 @@
 # TODO: Sync system wide config files
 + /home/
 + /home/ditatompel/
++ /home/ditatompel/.zshenv
 + /home/ditatompel/.config/
+# zsh config
++ /home/ditatompel/.config/zsh/
++ /home/ditatompel/.config/zsh/prompt.zsh
++ /home/ditatompel/.config/zsh/.zshrc
 # nvim config
 + /home/ditatompel/.config/nvim/
 + /home/ditatompel/.config/nvim/init.lua
