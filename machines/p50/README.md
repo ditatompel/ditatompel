@@ -4,9 +4,27 @@ Replacement for my [ThinkPad T420](../t420).
 
 This repo is far from complete, I'll update this repo during my spare time.
 
-## Packages
+## System Hardware
 
-### System
+- Board: ThinkPad P50 (20EQS44000)
+- Processor: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+- GPU: NVIDIA Quadro M1000M 4GB (GM107GLM)
+- Network:
+  - Ethernet: 1GbE I219-LM
+  - Wireless: Intel® Dual Band Wireless-AC 8260
+- Keyboard: SN20H35185 (UK/EU Layout, no backlight)
+- Battery: Lenovo 00NY491 (4 cells, 66000mWh, 15V)
+- Memory: 8GB/64GB
+  - ChannelA-DIMM0: 8GB SODIMM DDR4 2133 MT/s Samsung M471A1K43CB1-CRC
+  - ChannelA-DIMM1: None
+  - ChannelB-DIMM0: None
+  - ChannelB-DIMM1: None
+- Disks:
+  - NVMe0: Samsung 256GB
+  - NVMe1: None
+  - SATA: None
+
+## Software
 
 - Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub)).
 
