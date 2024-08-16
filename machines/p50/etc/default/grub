@@ -20,7 +20,11 @@ GRUB_DISTRIBUTOR="Arch"
 # one default entry and one entry for recovery mode.
 # This option lists command-line arguments to add only to the default
 # menu entry, after those listed in ‘GRUB_CMDLINE_LINUX’.
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3"
+#
+# Kernel parameters:
+#     - `atkbd.softrepeat=1` set fast keyboard repeat rate and low delay.
+#       This similar with `xset r rate ... ...`
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 atkbd.softrepeat=1"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
