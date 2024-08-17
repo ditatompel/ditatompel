@@ -32,4 +32,6 @@ fi
 # Keyboard rate speed and delay
 xset r rate 250 30 &
 
+eval $(ssh-agent)
+
 exec bspwm
