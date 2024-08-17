@@ -34,6 +34,7 @@
 + /etc/pacman.d/
 + /etc/pacman.d/hooks/
 + /etc/pacman.d/hooks/nvidia.hook
++ /etc/pacman.d/hooks/dash.hook
 + /etc/X11/
 + /etc/X11/xorg.conf.d/
 + /etc/X11/xorg.conf.d/30-touchpad.conf
