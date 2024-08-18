@@ -24,6 +24,14 @@ This repo is far from complete, I'll update this repo during my spare time.
   - NVMe1: None
   - SATA: None
 
+TLDR; required packages for this machine running X:
+
+```
+xorg-server xorg-xrandr xorg-xinit org-xset org-xsetroot \
+mesa nvidia nvidia-utils \
+xbindkeys bspwm sxhkd
+```
+
 ## Software
 
 - Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub)).
