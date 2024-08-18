@@ -4,7 +4,16 @@
 ## For more detailed information, read:
 ## https://miikanissi.com/blog/hotplug-dual-monitor-setup-bspwm/
 
-INTERNAL_MONITOR="eDP-1"
+RANDR=$(xrandr)
+INTERNAL_MONITOR=$(echo "$RANDR" | awk '/ primary/{print $1}')
+if [ "$INTERNAL_MONITOR" = "DP-0" ]; then
+  # this indicate this machine xorg setting is set using NVIDIA.
+  # change internal monitor to eDP-1-1
+  INTERNAL_MONITOR="eDP-1-1"
+  # set eDP-1-1 as primary monitor
+  xrandr --output "$INTERNAL_MONITOR" --primary
+fi
+
 EXTERNAL_MONITOR="HDMI-1"
 
 ## on first load, setup default workspaces
