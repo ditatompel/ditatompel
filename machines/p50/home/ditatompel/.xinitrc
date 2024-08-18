@@ -29,8 +29,15 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+xrandr --auto
+xrandr --dpi 96
+
+# NVIDIA graphics
+# xrandr --setprovideroutputsource modesetting NVIDIA-0
+
 # Keyboard rate speed and delay
-xset r rate 250 30 &
+xset r rate 250 30
+xbindkeys
 
 eval $(ssh-agent)
 
