@@ -143,4 +143,26 @@ function ytv() {
   mpv --ytdl-format='bestvideo[height<=?720]+bestaudio/best' ytdl://ytsearch:"$*"
 }
 
+# Screen recording
+# This is wrapper function to record screen using ffmpeg (without audio).
+function screenrecord () {
+  local output="record.mkv"
+  if [[ "$1" == *.mkv ]]; then 
+    output="$1"
+  fi
+
+  # To take a screencast with lossless encoding and without audio: 
+  # ffmpeg -f x11grab -i "$DISPLAY" -video_size 1280x1920 -c:v ffvhuff "$output"
+
+  # When using the proprietary NVIDIA driver with the nvidia-utils,
+  # NVENC and NVDEC can be used for encoding/decoding.
+  # To print available options execute (hevc_nvenc may also be available):
+  # ffmpeg -help encoder=h264_nvenc
+  # See; https://wiki.archlinux.org/title/FFmpeg#NVIDIA_NVENC/NVDEC
+  ffmpeg -f x11grab -i "$DISPLAY" -video_size 1280x1920 \
+    -c:v h264_nvenc -rc constqp -qp 28 "$output"
+
+  echo "Video saved: $output"
+}
+
 # vim: set ts=2 sw=2 et:
