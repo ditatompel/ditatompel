@@ -27,6 +27,11 @@
 # bspwm config
 + /home/ditatompel/.config/bspwm/
 + /home/ditatompel/.config/bspwm/***
+# scripts
++ /home/ditatompel/.local/
++ /home/ditatompel/.local/scripts/
++ /home/ditatompel/.local/scripts/system/
++ /home/ditatompel/.local/scripts/system/backlight.sh
 # /etc configs
 + /etc/
 + /etc/mkinitcpio.conf
@@ -40,5 +45,8 @@
 + /etc/X11/xorg.conf.d/
 + /etc/X11/xorg.conf.d/10-nvidia.conf
 + /etc/X11/xorg.conf.d/30-touchpad.conf
++ /etc/udev/
++ /etc/udev/rules.d/
++ /etc/udev/rules.d/backlight.rules
 # important: exclude the rest
 - *

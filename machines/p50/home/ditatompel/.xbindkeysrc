@@ -13,3 +13,11 @@
 # Mute microphone
 "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
    XF86AudioMicMute
+
+# Brightness up
+"~/.local/scripts/system/backlight.sh up"
+   XF86MonBrightnessUp
+
+# Brightness down
+"~/.local/scripts/system/backlight.sh down"
+   XF86MonBrightnessDown
