@@ -375,6 +375,26 @@ require('lazy').setup({
             'markdown',
           },
         },
+        gopls = {
+          filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+          settings = {
+            -- see https://github.com/golang/tools/tree/master/gopls
+            gopls = {
+              buildFlags = {
+                '-tags=server', -- my custom project requirement
+              },
+              completeUnimported = true,
+              usePlaceholders = true,
+              analyses = {
+                unusedparams = true,
+              },
+            },
+          },
+        },
+        gofumpt = {},
+        goimports = {},
+        templ = { filetypes = { 'templ' } },
+        htmx = { filetypes = { 'html' } },
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -634,7 +654,21 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
+      ensure_installed = {
+        'bash',
+        'c',
+        'diff',
+        'html',
+        'lua',
+        'luadoc',
+        'markdown',
+        'markdown_inline',
+        'query',
+        'vim',
+        'vimdoc',
+        'go',
+        'templ',
+      },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
