@@ -29,7 +29,8 @@ TLDR; required packages for this machine running X:
 ```
 xorg-server xorg-xrandr xorg-xinit org-xset org-xsetroot \
 mesa nvidia nvidia-utils \
-xbindkeys bspwm sxhkd
+xbindkeys bspwm sxhkd \
+ttf-jetbrains-mono-nerd ttf-font-awesome
 ```
 
 ## Software
