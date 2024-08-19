@@ -69,7 +69,7 @@ feh --no-fehbg --bg-fill \
 
 # Kill and relaunch polybar
 killall -q polybar
-while pgrep -u $UID -x polybar > /dev/null; do sleep 2; done
+while pgrep -u $UID -x polybar > /dev/null; do sleep 1; done
 
 if [[ $(xrandr -q | grep -e "^${EXTERN} connected") ]]; then
   polybar --reload primary -c ~/.config/polybar/config.ini \
