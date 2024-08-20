@@ -48,5 +48,8 @@
 + /etc/udev/
 + /etc/udev/rules.d/
 + /etc/udev/rules.d/backlight.rules
++ /etc/NetworkManager/
++ /etc/NetworkManager/dispatcher.d/
++ /etc/NetworkManager/dispatcher.d/wlan_auto_toggle.sh
 # important: exclude the rest
 - *
