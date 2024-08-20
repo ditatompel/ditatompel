@@ -90,12 +90,6 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
   add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-export EDITOR="/usr/bin/nvim"
-
-# Colorized manpage (less)
-export MANPAGER="less -R --use-color -Dd+r -Du+b"
-export MANROFFOPT="-P -c"
-
 # This `NVM_DIR` is uncommented and now placed in ~/.zshenv
 # export NVM_DIR="$HOME/.config/nvm"
 # You can add `--no-use` at the end of below script to postpone using nvm until
