@@ -96,10 +96,15 @@ export EDITOR="/usr/bin/nvim"
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
 
-export NVM_DIR="$HOME/.config/nvm"
-# You can add `--no-use` at the end of below script (..."$NVM_DIR/nvm.sh" --no-use)
-# to postpone using nvm until you manually use it.
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+# This `NVM_DIR` is uncommented and now placed in ~/.zshenv
+# export NVM_DIR="$HOME/.config/nvm"
+# You can add `--no-use` at the end of below script to postpone using nvm until
+# you manually use it. E.g: (..."$NVM_DIR/nvm.sh" --no-use)
+# 
+# NOTE: In this machine, NVM already initiated when user login to zsh shell.
+# Using `--no-use` here make the `nvm` "just" available from any
+# teminal session, but not executing it.
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use
 
 # Local bin, Go bin, Bun bin
 export PATH="$PATH:$HOME/.local/bin:$(go env GOPATH)/bin:$CARGO_HOME/bin:$BUN_INSTALL/bin"
