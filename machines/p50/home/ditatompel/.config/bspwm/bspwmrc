@@ -1,34 +1,36 @@
 #!/bin/sh
-## bspwm dual monitor config
-## Based on miikanissi's config: https://github.com/miikanissi/dotfiles
-## For more detailed information, read:
-## https://miikanissi.com/blog/hotplug-dual-monitor-setup-bspwm/
+#
+# Bspwm dual monitor config
+#
+# This bspwmrc script based on miikanissi's bspwmrc file:
+# https://github.com/miikanissi/dotfiles
+# For more detailed information, read:
+# https://miikanissi.com/blog/hotplug-dual-monitor-setup-bspwm/
 
 RANDR=$(xrandr)
-INTERNAL_MONITOR=$(echo "$RANDR" | awk '/ primary/{print $1}')
-if [ "$INTERNAL_MONITOR" = "DP-0" ]; then
+INTERN=$(echo "$RANDR" | awk '/ primary/{print $1}')
+if [ "$INTERN" = "DP-0" ]; then
   # this indicate this machine xorg setting is set using NVIDIA.
   # change internal monitor to eDP-1-1
-  INTERNAL_MONITOR="eDP-1-1"
+  INTERN="eDP-1-1"
   # set eDP-1-1 as primary monitor
-  xrandr --output "$INTERNAL_MONITOR" --primary
+  xrandr --output "$INTERN" --primary
 fi
 
-EXTERNAL_MONITOR="HDMI-1"
+EXTERN="HDMI-1"
 
 ## on first load, setup default workspaces
 if [ "$1" = 0 ]; then
-  if xrandr -q | grep "${EXTERNAL_MONITOR} connected"; then
-    bspc monitor "$INTERNAL_MONITOR" -d 1 2 3 4 5
-    bspc monitor "$EXTERNAL_MONITOR" -d 6 7 8 9 10
-    bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
+  if xrandr -q | grep "${EXTERN} connected"; then
+    bspc monitor "$INTERN" -d 1 2 3 4 5
+    bspc monitor "$EXTERN" -d 6 7 8 9 10
+    bspc wm -O "$INTERN" "$EXTERN"
   else
-    bspc monitor "$INTERNAL_MONITOR" -d 1 2 3 4 5 6 7 8 9 10
+    bspc monitor "$INTERN" -d 1 2 3 4 5 6 7 8 9 10
   fi
 fi
 
-# Helper function to check for active process,
-# if not found starts program on the background.
+# helper function to check for active process, if process not found, starts program on the background.
 _run() {
   if ! pgrep -x "${1}" >/dev/null; then
     "$@" &
@@ -46,11 +48,11 @@ bspc config gapless_monocle         true
 bspc config single_monocle          true
 bspc config focus_follows_pointer   true
 
-bspc config focused_border_color    "#63C5EA"
-bspc config active_border_color     "#2BE491"
+bspc config focused_border_color    "#89b4fa"
+bspc config active_border_color     "#f9e2af"
 
 ## Use `xprop | grep WM_CLASS` to see WM class (require `xorg-xprop` package)
-bspc rule -a firefox-developer-edition desktop='^2'  follow=on split_ratio=0.35
+bspc rule -a firefox-developer-edition desktop='^2'  follow=on
 bspc rule -a TelegramDesktop           desktop='^6'  follow=on split_ratio=0.60
 bspc rule -a nheko                     desktop='^6'  follow=on split_ratio=0.40
 bspc rule -a "thunderbird":Mail        desktop='^10' follow=on
