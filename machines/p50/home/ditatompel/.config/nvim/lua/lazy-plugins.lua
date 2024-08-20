@@ -352,16 +352,13 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
-        --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        -- tsserver = {},
         --
         prettierd = {
           filetypes = {
@@ -395,6 +392,8 @@ require('lazy').setup({
         goimports = {},
         templ = { filetypes = { 'templ' } },
         htmx = { filetypes = { 'html' } },
+        tsserver = {},
+        svelte = { filetypes = { 'svelte' } },
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
@@ -470,12 +469,18 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        markdown = { 'prettierd', 'prettier' },
+        go = { 'gofumpt', 'goimports' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        markdown = { 'prettierd', 'prettier', stop_after_first = true },
+        javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        typescript = { 'prettierd', 'prettier', stop_after_first = true },
+        css = { 'prettierd', 'prettier', stop_after_first = true },
+        html = { 'prettierd', 'prettier', stop_after_first = true },
+        yaml = { 'prettierd', 'prettier', stop_after_first = true },
+        json = { 'prettierd', 'prettier', stop_after_first = true },
       },
     },
   },
@@ -668,6 +673,9 @@ require('lazy').setup({
         'vimdoc',
         'go',
         'templ',
+        'svelte',
+        'javascript',
+        'typescript',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
