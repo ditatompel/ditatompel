@@ -27,6 +27,9 @@
 # bspwm config
 + /home/ditatompel/.config/bspwm/
 + /home/ditatompel/.config/bspwm/***
+# sxhkd config
++ /home/ditatompel/.config/sxhkd/
++ /home/ditatompel/.config/sxhkd/***
 # scripts
 + /home/ditatompel/.local/
 + /home/ditatompel/.local/scripts/

@@ -1,0 +1,154 @@
+# Sxhkd config
+# NOTE: Follow this file specific comment format, spacing and newline
+# becahse file will be read and parsed to Rofi using custom script.
+
+# ============================
+# Application specific hotkeys
+# ============================
+
+# script: Show Sxhkd keybinds help menu.
+super + F1
+    ~/.config/rofi/scripts/sxhkd-keybinds.sh
+
+# script(alacritty,lf,neomutt): Launch or show scratchpad application.
+super + alt + {space,e,m}
+    ~/.config/bspwm/scripts/scratchpad.sh {terminal,lf,neomutt}
+
+
+# sxhkd: Reload Sxhkd configuration.
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# alacritty: Launch terminal emulator.
+super + Return
+    alacritty msg create-window || alacritty
+
+# lf: Launch CLI file manager.
+super + e
+    alacritty -e lf
+
+# pcmanfm: Launch GUI file manager.
+super + shift + e
+    pcmanfm -n
+
+# firefox(prime): Launch Firefox browser with `prime-run`.
+super + shift + f
+    prime-run firefox-developer-edition
+
+# rofi: Show applications launcher.
+alt + @space
+    rofi -no-lazy-grab -modi run,combi,drun -show drun -show-icons
+
+# ======================
+# Bspwm specific hotkeys
+# ======================
+
+# bspc: Quit or restart Bspwm process.
+super + alt + {q,r}
+    bspc {quit,wm -r}
+
+# bspc: Close or kill focused node process.
+super + {_,shift + }w
+    bspc node -{c,k}
+
+#
+# State and flags
+#
+
+# bspc(state): Set node state to tiled/pseudo_tiled/floating/fullscreen.
+super + {t,shift + t,s,f}
+    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# bspc(flag): Set the node flags to marked/locked/sticky/private.
+super + ctrl + {m,x,y,z}
+    bspc node -g {marked,locked,sticky,private}
+
+#
+# Focus and swap
+#
+
+# bspc: Move or focus the node in the given direction.
+super + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
+
+# bspc: Focus the node for the given path jump.
+super + {p,b,comma,period}
+    bspc node -f @{parent,brother,first,second}
+
+# bspc: Focus the next/previous node in the current desktop.
+super + {_,shift + }c
+    bspc node -f {next,prev}.local.!hidden.window
+
+# bspc: Focus the next/previous node in the current desktop (Alternative).
+alt + {_,shift + }Tab
+    bspc node -f {next,prev}.local.!hidden.window
+
+# bspc: Focus the next/previous desktop in the current monitor.
+super + bracket{left,right}
+    bspc desktop -f {prev,next}.local
+
+# bspc: Focus the last node/desktop.
+super + {grave,Tab}
+    bspc {node,desktop} -f last
+
+# bspc: Focus the older or newer node in the focus history.
+super + {o,i}
+    bspc wm -h off; \
+    bspc node {older,newer} -f; \
+    bspc wm -h on
+
+# bspc: focus or send to the given desktop.
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+# bspc: Alternate between the tiled and monocle desktop layout.
+super + m
+    bspc desktop -l next
+
+# bspc: Swap the current node and the biggest window.
+super + g
+    bspc node -s biggest.window
+
+#
+# Preselection
+#
+
+# bspc(presel): Set preselection direction from current focus node.
+super + ctrl + {h,j,k,l}
+    bspc node -p {west,south,north,east}
+
+# bspc(presel): Change preselected ratio.
+super + ctrl + {1-9}
+    bspc node -o 0.{1-9}
+
+# bspc(presel): Cancel the preselection for the focused node.
+super + ctrl + space
+    bspc node -p cancel
+
+# bspc(presel): Cancel the preselection for the focused desktop.
+super + ctrl + shift + space
+    bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# bspc(presel): Send the newest marked node to the newest preselected node.
+super + y
+    bspc node newest.marked.local -n newest.!automatic.local
+
+#
+# Move or resize
+#
+
+# bspc(resize): Expand a node by moving one of its side outward.
+super + alt + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# bspc(resize): Contract a window by moving one of its side inward.
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# bspc(move): Move a floating node.
+super + {Left,Down,Up,Right}
+    bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# bsppc: Rotate node.
+super + shift + r
+    bspc node @/ -R 90
