@@ -49,6 +49,10 @@ ttf-jetbrains-mono-nerd ttf-font-awesome
 - `vim` | [vim.org](https://www.vim.org/) | [Vim Arch Wiki](https://wiki.archlinux.org/title/Vim).
 - `nvim` ([config](./home/ditatompel/.config/nvim)) | [neovim.io](https://neovim.io/) | [NeoVim Arch Wiki](https://wiki.archlinux.org/title/Neovim).
 
+### Utilities
+
+- `imagemagick` or `flameshot` for screenshot. | [ImageMagick Arch Wiki][imagemagick_aw] | [flameshot.org](https://flameshot.org/) | [Flameshot Arch Wiki](https://wiki.archlinux.org/title/Flameshot).
+
 ## Hardware Topology
 
 ```
@@ -101,3 +105,5 @@ lstopo -.ascii
 │ Date: Tue 13 Aug 2024 08:39:28 PM WIB                                                                         │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+[imagemagick_aw]: https://wiki.archlinux.org/title/ImageMagick "ImageMagick Arch Wiki"

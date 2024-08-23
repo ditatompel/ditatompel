@@ -39,6 +39,10 @@ super + shift + f
 alt + @space
     rofi -no-lazy-grab -modi run,combi,drun -show drun -show-icons
 
+# script: Perform screen capture.
+super + Print
+    ~/.local/scripts/system/screenshot.sh
+
 # ======================
 # Bspwm specific hotkeys
 # ======================

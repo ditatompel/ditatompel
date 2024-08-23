@@ -35,6 +35,7 @@
 + /home/ditatompel/.local/scripts/
 + /home/ditatompel/.local/scripts/system/
 + /home/ditatompel/.local/scripts/system/backlight.sh
++ /home/ditatompel/.local/scripts/system/screenshot.sh
 # /etc configs
 + /etc/
 + /etc/mkinitcpio.conf
