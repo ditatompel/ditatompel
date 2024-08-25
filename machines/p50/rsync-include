@@ -10,6 +10,9 @@
 + /home/ditatompel/.config/zsh/
 + /home/ditatompel/.config/zsh/prompt.zsh
 + /home/ditatompel/.config/zsh/.zshrc
+# tmux config
++ /home/ditatompel/.config/tmux/
++ /home/ditatompel/.config/tmux/tmux.conf
 # nvim config
 + /home/ditatompel/.config/nvim/
 + /home/ditatompel/.config/nvim/init.lua
