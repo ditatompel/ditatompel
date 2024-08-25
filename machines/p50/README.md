@@ -30,13 +30,14 @@ TLDR; required packages for this machine running X:
 xorg-server xorg-xrandr xorg-xinit org-xset org-xsetroot \
 mesa nvidia nvidia-utils \
 xbindkeys bspwm sxhkd \
-ttf-jetbrains-mono-nerd ttf-font-awesome
+alacritty polybar ttf-jetbrains-mono-nerd ttf-font-awesome
 ```
 
 ## Software
 
-- Boot loader : [GRUB](https://wiki.archlinux.org/title/GRUB) ([config](./etc/default/grub)).
-- WM: `bspwm` | [bspwm Arch Wiki](https://wiki.archlinux.org/title/Bspwm) | [Sxhkd Arch Wiki](https://wiki.archlinux.org/title/Sxhkd).
+- Boot loader : [GRUB][grub_aw] | ([config][grub_cfg]).
+- WM: `bspwm` | [Bspwm Arch Wiki][bspwm_aw] | [Sxhkd Arch Wiki][sxhkd_aw].
+- Status bar: `polybar` | [GitHub][polybar_gh].
 
 ### Shell & Terminal
 
@@ -106,4 +107,9 @@ lstopo -.ascii
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
+[grub_aw]: https://wiki.archlinux.org/title/GRUB "GRUB Arch Wiki"
+[grub_cfg]: ./etc/default/grub "GRUB configuration file"
+[bspwm_aw]: https://wiki.archlinux.org/title/Bspwm "Bspwm Arch Wiki"
+[sxhkd_aw]: https://wiki.archlinux.org/title/Sxhkd "Sxhkd Arch Wiki"
+[polybar_gh]: https://github.com/polybar/polybar "Polybar GitHub"
 [imagemagick_aw]: https://wiki.archlinux.org/title/ImageMagick "ImageMagick Arch Wiki"
