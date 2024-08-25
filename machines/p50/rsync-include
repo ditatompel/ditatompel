@@ -41,10 +41,13 @@
 + /etc/mkinitcpio.conf
 + /etc/default/
 + /etc/default/grub
+# pacman
++ /etc/pacman.conf
 + /etc/pacman.d/
 + /etc/pacman.d/hooks/
 + /etc/pacman.d/hooks/nvidia.hook
 + /etc/pacman.d/hooks/dash.hook
+# xorg
 + /etc/X11/
 + /etc/X11/xorg.conf.d/
 + /etc/X11/xorg.conf.d/10-nvidia.conf
