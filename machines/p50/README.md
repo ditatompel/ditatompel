@@ -12,7 +12,7 @@ This repo is far from complete, I'll update this repo during my spare time.
 - Network:
   - Ethernet: 1GbE I219-LM
   - Wireless: Intel® Dual Band Wireless-AC 8260
-- Keyboard: SN20H35185 (UK/EU Layout, no backlight)
+- Keyboard: SN20M15446 (US Layout, with backlight)
 - Battery: Lenovo 00NY491 (4 cells, 66000mWh, 15V)
 - Memory: 8GB/64GB
   - ChannelA-DIMM0: 8GB SODIMM DDR4 2133 MT/s Samsung M471A1K43CB1-CRC
