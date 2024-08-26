@@ -139,7 +139,9 @@ function yta() {
 }
 # Search and play YouTube video
 function ytv() {
-  mpv --ytdl-format='bestvideo[height<=?720]+bestaudio/best' ytdl://ytsearch:"$*"
+  mpv \
+    --ytdl-format="bestvideo[height<=?720][vcodec!~='vp0?9']+bestaudio/best" \
+    ytdl://ytsearch:"$*"
 }
 
 # Screen recording
