@@ -33,7 +33,7 @@ super + shift + e
 
 # firefox(prime): Launch Firefox browser with `prime-run`.
 super + shift + f
-    prime-run firefox-developer-edition
+    firefox-developer-edition
 
 # rofi: Show applications launcher.
 alt + @space

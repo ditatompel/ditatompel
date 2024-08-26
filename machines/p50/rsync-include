@@ -47,6 +47,7 @@
 + /home/ditatompel/.local/scripts/system/screenshot.sh
 # /etc configs
 + /etc/
++ /etc/environment
 + /etc/mkinitcpio.conf
 + /etc/default/
 + /etc/default/grub

@@ -1,0 +1,18 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+#
+#################
+# NVIDIA Config #
+#################
+#
+# While NVIDIA's proprietary driver does not support VA-API,
+# newer versions support DMA-BUF. Using `libva-nvidia-driver` will allow for
+# hardware video decoding on NVIDIA using CUDA.
+# See https://github.com/elFarto/nvidia-vaapi-driver for documentation on
+# necessary environment variables and about:config changes.
+MOZ_DISABLE_RDD_SANDBOX=1
+LIBVA_DRIVER_NAME=nvidia
+__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json
