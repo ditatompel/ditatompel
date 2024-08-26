@@ -36,6 +36,9 @@
 # polybar config
 + /home/ditatompel/.config/polybar/
 + /home/ditatompel/.config/polybar/***
+# mpv config
++ /home/ditatompel/.config/mpv/
++ /home/ditatompel/.config/mpv/mpv.conf
 # scripts
 + /home/ditatompel/.local/
 + /home/ditatompel/.local/scripts/
