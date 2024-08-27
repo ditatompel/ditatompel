@@ -3,9 +3,11 @@
 + /home/
 + /home/ditatompel/
 + /home/ditatompel/.zshenv
-+ /home/ditatompel/.xinitrc
 + /home/ditatompel/.xbindkeysrc
 + /home/ditatompel/.config/
+# X11 config
++ /home/ditatompel/.config/X11/
++ /home/ditatompel/.config/X11/***
 # zsh config
 + /home/ditatompel/.config/zsh/
 + /home/ditatompel/.config/zsh/prompt.zsh
