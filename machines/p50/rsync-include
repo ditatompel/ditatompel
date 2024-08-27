@@ -8,6 +8,8 @@
 # X11 config
 + /home/ditatompel/.config/X11/
 + /home/ditatompel/.config/X11/***
++ /home/ditatompel/.config/xbindkeys/
++ /home/ditatompel/.config/xbindkeys/config
 # zsh config
 + /home/ditatompel/.config/zsh/
 + /home/ditatompel/.config/zsh/prompt.zsh

@@ -41,7 +41,7 @@ xrandr --dpi 141
 
 # Keyboard rate speed and delay
 xset r rate 250 30
-xbindkeys
+xbindkeys -f "$XDG_CONFIG_HOME/xbindkeys/config"
 
 eval $(ssh-agent)
 
