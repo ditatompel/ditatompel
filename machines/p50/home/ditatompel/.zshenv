@@ -43,6 +43,10 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 # Wakatime
 export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
 
+# Ansible
+export ANSIBLE_HOME="$XDG_CONFIG_HOME/ansible"
+export ANSIBLE_CONFIG="$XDG_CONFIG_HOME/ansible.cfg"
+
 # Colorized manpage (less)
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
