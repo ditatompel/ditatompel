@@ -47,6 +47,9 @@ export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
 export ANSIBLE_HOME="$XDG_CONFIG_HOME/ansible"
 export ANSIBLE_CONFIG="$XDG_CONFIG_HOME/ansible.cfg"
 
+# MariaDB
+export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql_history"
+
 # Colorized manpage (less)
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
