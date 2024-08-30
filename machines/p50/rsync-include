@@ -29,7 +29,9 @@
 + /home/ditatompel/.config/nvim/lua/options.lua
 + /home/ditatompel/.config/nvim/lua/keymaps.lua
 + /home/ditatompel/.config/nvim/lua/lazy-plugins.lua
-+ /home/ditatompel/.config/nvim/lua/custom/***
++ /home/ditatompel/.config/nvim/lua/custom/plugins/
++ /home/ditatompel/.config/nvim/lua/custom/plugins/init.lua
++ /home/ditatompel/.config/nvim/lua/custom/plugins/gopher.lua
 + /home/ditatompel/.config/nvim/lua/kickstart/***
 # bspwm config
 + /home/ditatompel/.config/bspwm/
