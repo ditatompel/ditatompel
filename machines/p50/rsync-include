@@ -39,6 +39,10 @@
 # sxhkd config
 + /home/ditatompel/.config/sxhkd/
 + /home/ditatompel/.config/sxhkd/***
+# pipewire config
++ /home/ditatompel/.config/pipewire/
++ /home/ditatompel/.config/pipewire/pipewire.conf.d/
++ /home/ditatompel/.config/pipewire/pipewire.conf.d/99-input-denoising.conf
 # polybar config
 + /home/ditatompel/.config/polybar/
 + /home/ditatompel/.config/polybar/***
