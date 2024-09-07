@@ -36,7 +36,7 @@ toggle_hidden() {
 }
 
 create_terminal() {
-  alacritty --class="${app}","${app}" -e "${1}" &
+  prime-run alacritty --class="${app}","${app}" -e "${1}" &
 }
 
 pgrep -f "class=${app}" > /dev/null && {

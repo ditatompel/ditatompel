@@ -49,15 +49,22 @@
 # mpv config
 + /home/ditatompel/.config/mpv/
 + /home/ditatompel/.config/mpv/mpv.conf
-# scripts
+# .local
 + /home/ditatompel/.local/
+# share
++ /home/ditatompel/.local/share/
++ /home/ditatompel/.local/share/applications/
++ /home/ditatompel/.local/share/applications/blender.desktop
++ /home/ditatompel/.local/share/applications/com.obsproject.Studio.desktop
++ /home/ditatompel/.local/share/applications/mpv.desktop
+# scripts
 + /home/ditatompel/.local/scripts/
 + /home/ditatompel/.local/scripts/system/
 + /home/ditatompel/.local/scripts/system/backlight.sh
 + /home/ditatompel/.local/scripts/system/screenshot.sh
 # /etc configs
 + /etc/
-+ /etc/environment
+#+ /etc/environment
 + /etc/mkinitcpio.conf
 + /etc/default/
 + /etc/default/grub
@@ -70,7 +77,7 @@
 # xorg
 + /etc/X11/
 + /etc/X11/xorg.conf.d/
-+ /etc/X11/xorg.conf.d/10-nvidia.conf
+#+ /etc/X11/xorg.conf.d/10-nvidia.conf
 + /etc/X11/xorg.conf.d/30-touchpad.conf
 + /etc/udev/
 + /etc/udev/rules.d/

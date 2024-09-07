@@ -72,7 +72,7 @@ xsetroot -cursor_name left_ptr &
 _run sxhkd -m -1 > /tmp/sxhkd.log
 
 # PCManFM File browser daemon 
-_run pcmanfm -d
+_run prime-run pcmanfm -d
 
 # Network Manager applet
 _run nm-applet

@@ -21,15 +21,15 @@ super + Escape
 
 # alacritty: Launch terminal emulator.
 super + Return
-    alacritty msg create-window || alacritty
+    prime-run alacritty msg create-window || prime-run alacritty
 
 # lf: Launch CLI file manager.
 super + e
-    alacritty -e lf
+    prime-run alacritty -e lf
 
 # pcmanfm: Launch GUI file manager.
 super + shift + e
-    pcmanfm -n
+    prime-run pcmanfm -n
 
 # firefox(prime): Launch Firefox browser with `prime-run`.
 super + shift + f
