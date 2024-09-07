@@ -30,9 +30,7 @@ require('lazy').setup({
   require 'kickstart/plugins/conform',
   require 'kickstart/plugins/cmp',
   require 'kickstart/plugins/theme', -- colorscheme
-
-  -- Highlight todo, notes, etc in comments
-  { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+  require 'kickstart/plugins/todo-comments',
 
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
