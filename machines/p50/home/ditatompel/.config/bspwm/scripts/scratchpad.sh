@@ -46,13 +46,13 @@ pgrep -f "class=${app}" > /dev/null && {
 
 bspc rule -a "${app}" --one-shot state=floating sticky=on hidden=on
 case "${app}" in
-  "terminal")
+  "term")
     create_terminal "${SHELL}"
     ;;
-  "lf")
-    create_terminal lf
+  "fm")
+    create_terminal yazi
     ;;
-  "neomutt")
+  "mail")
     create_terminal neomutt
     ;;
   *)
@@ -64,6 +64,6 @@ toggle_hidden
 
 # If you want to show notification when new scracthpad emulated, do it here.
 # E.g with dunstify:
-# dunstify "Scratch: starting ${app}"
+dunstify "Scratch: starting ${app}"
 
 # vim: set sw=2 ts=2 et

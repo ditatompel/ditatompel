@@ -49,6 +49,9 @@
 # mpv config
 + /home/ditatompel/.config/mpv/
 + /home/ditatompel/.config/mpv/mpv.conf
+# yazi config
++ /home/ditatompel/.config/yazi/
++ /home/ditatompel/.config/yazi/yazi.toml
 # .local
 + /home/ditatompel/.local/
 # share

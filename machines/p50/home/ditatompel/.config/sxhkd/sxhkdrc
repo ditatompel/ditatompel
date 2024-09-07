@@ -10,10 +10,9 @@
 super + F1
     ~/.config/rofi/scripts/sxhkd-keybinds.sh
 
-# script(alacritty,lf,neomutt): Launch or show scratchpad application.
+# script(alacritty,yazi,neomutt): Launch or show scratchpad application.
 super + alt + {space,e,m}
-    ~/.config/bspwm/scripts/scratchpad.sh {terminal,lf,neomutt}
-
+    ~/.config/bspwm/scripts/scratchpad.sh {term,fm,mail}
 
 # sxhkd: Reload Sxhkd configuration.
 super + Escape
@@ -23,9 +22,9 @@ super + Escape
 super + Return
     prime-run alacritty msg create-window || prime-run alacritty
 
-# lf: Launch CLI file manager.
+# yazi: Launch CLI file manager.
 super + e
-    prime-run alacritty -e lf
+    prime-run alacritty -e yazi
 
 # pcmanfm: Launch GUI file manager.
 super + shift + e
