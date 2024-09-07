@@ -42,6 +42,10 @@ alt + @space
 super + Print
     ~/.local/scripts/system/screenshot.sh
 
+# slock: Lock screen.
+super + shift + F2
+    slock
+
 # ======================
 # Bspwm specific hotkeys
 # ======================
