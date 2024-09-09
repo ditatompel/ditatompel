@@ -53,7 +53,7 @@ precmd() {
     USER_FMT="%F{red}%n%f"
   fi
 
-  PS1="%B${USER_FMT}@%F{blue}%m%k %(?.%F{green}√.%F{red}?%?)%f %F{yellow}${elapsed}%f %B%F{cyan}%~%b%f%k${vcs_info_msg_0_} "$'\n'"%# "
+  PS1="%B${USER_FMT}@%F{cyan}%m%k %(?.%F{green}√.%F{red}?%?)%f %F{yellow}${elapsed}%f %B%F{blue}%~%b%f%k${vcs_info_msg_0_} "$'\n'"%# "
 }
 
 # vim: set ts=2 sw=2 et:
