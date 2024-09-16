@@ -11,17 +11,18 @@
 
 # You can get a list of interfaces using nmcli.
 # The Ethernet (LAN) interfaces usually start with `en`. E.g. `enp0s...`
-if [ "${1}" = "enp0s31f6" ]; then
-  case "${2}" in
-    up)
-      nmcli radio wifi off
-      ;;
-    down)
-      nmcli radio wifi on
-      ;;
-  esac
-elif [ "$(nmcli -g GENERAL.STATE device show enp0s31f6)" = "20 (unavailable)" ]; then
-  nmcli radio wifi on
-fi
+
+# if [ "${1}" = "enp0s31f6" ]; then
+#   case "${2}" in
+#     up)
+#       nmcli radio wifi off
+#       ;;
+#     down)
+#       nmcli radio wifi on
+#       ;;
+#   esac
+# elif [ "$(nmcli -g GENERAL.STATE device show enp0s31f6)" = "20 (unavailable)" ]; then
+#   nmcli radio wifi on
+# fi
 
 # vim: set ts=2 sw=2 et:
