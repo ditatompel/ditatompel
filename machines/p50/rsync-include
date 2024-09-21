@@ -88,5 +88,8 @@
 + /etc/NetworkManager/
 + /etc/NetworkManager/dispatcher.d/
 + /etc/NetworkManager/dispatcher.d/wlan_auto_toggle.sh
+# TLP
++ /etc/tlp.d
++ /etc/tlp.d/01-battery.conf
 # important: exclude the rest
 - *
