@@ -14,11 +14,11 @@ This repo is far from complete, I'll update this repo during my spare time.
   - Wireless: Intel® Dual Band Wireless-AC 8260
 - Keyboard: SN20M15446 (US Layout, with backlight)
 - Battery: Lenovo 00NY491 (4 cells, 66000mWh, 15V)
-- Memory: 8GB/64GB
-  - ChannelA-DIMM0: 8GB SODIMM DDR4 2133 MT/s Samsung M471A1K43CB1-CRC
-  - ChannelA-DIMM1: None
-  - ChannelB-DIMM0: None
-  - ChannelB-DIMM1: None
+- Memory: Dual Channel 64GB @ 2133 MT/s (downclocked)
+  - ChannelA-DIMM0: 16GB SODIMM DDR4 2400 MT/s Samsung M471A2K43BB1-CRCQ
+  - ChannelA-DIMM1: 16GB SODIMM DDR4 2400 MT/s Samsung M471A2K43BB1-CRCQ
+  - ChannelB-DIMM0: 16GB SODIMM DDR4 2400 MT/s Samsung M471A2K43BB1-CRCQ
+  - ChannelB-DIMM1: 16GB SODIMM DDR4 2400 MT/s Samsung M471A2K43BB1-CRCQ
 - Disks:
   - NVMe0: Team MP33 PRO M.2 PCIe SSD 1TB
   - NVMe1: None
@@ -59,13 +59,13 @@ alacritty polybar ttf-jetbrains-mono-nerd ttf-font-awesome
 ```
 lstopo -.ascii
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ Machine (7767MB total)                                                                                        │
+│ Machine (63GB total)                                                                                          │
 │                                                                                                               │
 │ ┌────────────────────────────────────────────────────────────────┐  ├┤╶─┬─────┼┤╶───────┬─────────────┐       │
-│ │ Package L#0                                                    │      │9.8       9.8  │ PCI 01:00.0 │       │
+│ │ Package L#0                                                    │      │4.0       4.0  │ PCI 01:00.0 │       │
 │ │                                                                │      │               └─────────────┘       │
 │ │ ┌────────────────────────────────────────────────────────────┐ │      │                                     │
-│ │ │ NUMANode L#0 P#0 (7767MB)                                  │ │      ├─────┬─────────────┐                 │
+│ │ │ NUMANode L#0 P#0 (63GB)                                    │ │      ├─────┬─────────────┐                 │
 │ │ └────────────────────────────────────────────────────────────┘ │      │     │ PCI 00:02.0 │                 │
 │ │                                                                │      │     └─────────────┘                 │
 │ │ ┌────────────────────────────────────────────────────────────┐ │      │                                     │
@@ -103,7 +103,7 @@ lstopo -.ascii
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ Host: p50                                                                                                     │
 │                                                                                                               │
-│ Date: Sun 01 Sep 2024 03:29:08 AM WIB                                                                         │
+│ Date: Sat 21 Sep 2024 01:59:51 PM WIB                                                                         │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
