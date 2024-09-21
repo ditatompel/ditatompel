@@ -30,9 +30,13 @@ super + e
 super + shift + e
     prime-run pcmanfm -n
 
-# firefox(prime): Launch Firefox browser with `prime-run`.
+# firefox: Launch Firefox browser using specific profile (my profile).
 super + shift + f
-    firefox-developer-edition
+    firefox-developer-edition -P ditatompel
+
+# firefox: Launch Firefox browser in new private window
+super + shift + p
+    firefox-developer-edition --private-window
 
 # rofi: Show applications launcher.
 alt + @space
