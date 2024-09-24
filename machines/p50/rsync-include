@@ -85,12 +85,16 @@
 + /etc/X11/xorg.conf.d/
 #+ /etc/X11/xorg.conf.d/10-nvidia.conf
 + /etc/X11/xorg.conf.d/30-touchpad.conf
+# udev
 + /etc/udev/
 + /etc/udev/rules.d/
 + /etc/udev/rules.d/backlight.rules
+# NetworkManager dispatcher
 + /etc/NetworkManager/
 + /etc/NetworkManager/dispatcher.d/
 + /etc/NetworkManager/dispatcher.d/wlan_auto_toggle.sh
+# asd
++ /etc/asd.conf
 # TLP
 + /etc/tlp.d
 + /etc/tlp.d/01-battery.conf
