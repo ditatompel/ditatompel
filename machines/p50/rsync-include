@@ -52,6 +52,9 @@
 # yazi config
 + /home/ditatompel/.config/yazi/
 + /home/ditatompel/.config/yazi/yazi.toml
+# psd config
++ /home/ditatompel/.config/psd/
++ /home/ditatompel/.config/psd/psd.conf
 # .local
 + /home/ditatompel/.local/
 # share
