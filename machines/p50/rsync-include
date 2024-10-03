@@ -52,6 +52,8 @@
 # yazi config
 + /home/ditatompel/.config/yazi/
 + /home/ditatompel/.config/yazi/yazi.toml
++ /home/ditatompel/.config/yazi/.stylua.toml
++ /home/ditatompel/.config/yazi/init.lua
 # psd config
 + /home/ditatompel/.config/psd/
 + /home/ditatompel/.config/psd/psd.conf
