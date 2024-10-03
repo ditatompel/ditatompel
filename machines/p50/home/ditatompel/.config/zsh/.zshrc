@@ -145,6 +145,17 @@ function ytv() {
     ytdl://ytsearch:"$*"
 }
 
+# Yazi wrapper that change the current working directory when exiting Yazi.
+# See: https://yazi-rs.github.io/docs/quick-start#shell-wrapper
+function yy() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
+}
+
 # Screen recording
 # This is wrapper function to record screen using ffmpeg (without audio).
 function screenrecord () {
