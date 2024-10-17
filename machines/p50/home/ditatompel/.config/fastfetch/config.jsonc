@@ -1,0 +1,119 @@
+// Modified from: https://github.com/fastfetch-cli/fastfetch/pull/1025#issuecomment-2177566138
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": null,
+    "display": {
+        "key": {
+            "paddingLeft": 2,
+            "width": 14
+        },
+        "color": {
+            "separator": "blue"
+        },
+        "separator": ":",
+        "constants": [
+            " >-----------------------------------------------------------<"
+        ]
+    },
+    "modules": [
+        {
+            "type": "version",
+            "keyColor": "blue"
+        },
+        {
+            "type": "datetime",
+            "key": "Date",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "{$1}",
+            "outputColor": "separator"
+        },
+        {
+            "type": "host",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "cpu",
+            "keyColor": "red"
+        },
+        {
+            "type": "memory",
+            "keyColor": "red"
+        },
+        {
+            "type": "gpu",
+            "keyColor": "green"
+        },
+        {
+            "type": "display",
+            "key": "Display",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "disk",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "{$1}",
+            "outputColor": "separator"
+        },
+        {
+            "type": "os",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "bootmgr",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "kernel",
+            "keyColor": "red"
+        },
+        {
+            "type": "uptime",
+            "keyColor": "green"
+        },
+        {
+            "type": "packages",
+            "keyColor": "green"
+        },
+        {
+            "type": "shell",
+            "keyColor": "green"
+        },
+        {
+            "type": "wm",
+            "keyColor": "cyan"
+        },
+
+        {
+            "type": "terminal",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "terminalfont",
+            "key": "Font",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "vulkan",
+            "keyColor": "blue"
+        },
+        {
+            "type": "opengl",
+            "keyColor": "blue"
+        },
+        {
+            "type": "opencl",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "{$1}",
+            "outputColor": "separator"
+        }
+    ]
+}

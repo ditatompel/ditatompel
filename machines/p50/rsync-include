@@ -60,6 +60,9 @@
 # psd config
 + /home/ditatompel/.config/psd/
 + /home/ditatompel/.config/psd/psd.conf
+# fastfetch config
++ /home/ditatompel/.config/fastfetch/
++ /home/ditatompel/.config/fastfetch/config.jsonc
 # .local
 + /home/ditatompel/.local/
 # share
