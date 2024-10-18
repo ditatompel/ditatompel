@@ -1,0 +1,14 @@
+# KDE Config File
+[Desktop Entry]
+Name=Kdenlive
+GenericName=Video Editor
+Comment=Nonlinear video editor by KDE
+Type=Application
+Exec=prime-run kdenlive %F
+Icon=/home/ditatompel/.icons/apps/kdenlive.svgz
+StartupWMClass=kdenlive
+X-DocPath=kdenlive/index.html
+MimeType=application/x-kdenlive;
+Categories=Qt;KDE;AudioVideo;AudioVideoEditing;
+Keywords=editing;video;audio;mlt;kde;
+X-DBUS-ServiceName=org.kde.kdenlive

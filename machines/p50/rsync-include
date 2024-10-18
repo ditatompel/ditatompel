@@ -68,10 +68,10 @@
 # share
 + /home/ditatompel/.local/share/
 + /home/ditatompel/.local/share/applications/
-+ /home/ditatompel/.local/share/applications/blender.desktop
 + /home/ditatompel/.local/share/applications/com.obsproject.Studio.desktop
 + /home/ditatompel/.local/share/applications/mpv.desktop
 + /home/ditatompel/.local/share/applications/numbat.desktop
++ /home/ditatompel/.local/share/applications/org.kde.kdenlive.desktop
 # scripts
 + /home/ditatompel/.local/scripts/
 + /home/ditatompel/.local/scripts/system/
