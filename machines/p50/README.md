@@ -33,6 +33,10 @@ xbindkeys bspwm sxhkd \
 alacritty polybar ttf-jetbrains-mono-nerd ttf-font-awesome
 ```
 
+For list of explicity installed packages (both from official or AUR), see
+[PKGS/pacman-Qqe.txt][pacman-Qqe]. For explicity installed packages from AUR
+only, see [PKGS/pacman-Qqme.txt][pacman-Qqme].
+
 ## Software
 
 - Boot loader : [GRUB][grub_aw] | ([config][grub_cfg]).
@@ -107,6 +111,8 @@ lstopo -.ascii
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
+[pacman-Qqe]: ./PKGS/pacman-Qqe.txt "Output of pacman -Qqe"
+[pacman-Qqme]: ./PKGS/pacman-Qqme.txt "Output of pacman -Qqme"
 [grub_aw]: https://wiki.archlinux.org/title/GRUB "GRUB Arch Wiki"
 [grub_cfg]: ./etc/default/grub "GRUB configuration file"
 [bspwm_aw]: https://wiki.archlinux.org/title/Bspwm "Bspwm Arch Wiki"

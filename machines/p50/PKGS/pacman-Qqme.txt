@@ -1,0 +1,4 @@
+telegraf-bin
+thinkfan
+winbox
+yay
