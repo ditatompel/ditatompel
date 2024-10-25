@@ -46,6 +46,9 @@
 # polybar config
 + /home/ditatompel/.config/polybar/
 + /home/ditatompel/.config/polybar/***
+# rofi config
++ /home/ditatompel/.config/rofi/
++ /home/ditatompel/.config/rofi/***
 # mpv config
 + /home/ditatompel/.config/mpv/
 + /home/ditatompel/.config/mpv/mpv.conf
