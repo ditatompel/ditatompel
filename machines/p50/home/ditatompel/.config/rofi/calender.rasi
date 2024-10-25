@@ -1,0 +1,107 @@
+// Rofi calender theme based from totoro-ghost's rofi-cal works.
+// See original work: https://github.com/totoro-ghost/rofi-cal
+
+* {
+    font:       "JetBrainsMono Nerd Font 14";
+    bg-col:     #1e1e2e;
+    border-col: #89b4fa;
+    grey:       #6c7086;
+    blue:       #89b4fa;
+    fg-col:     #cdd6f4;
+
+    // calender date items
+    selected-normal-foreground:  #f9f9f9;
+    foreground:                  #c4cbd4;
+    normal-foreground:           #c4cbd4;
+    selected-urgent-foreground:  #f9f9f9;
+    urgent-foreground:           #e06b74;
+    active-foreground:           #65acff;
+    selected-active-foreground:  #f9f9f9;
+    normal-background:           #282c33;
+    selected-normal-background:  #4084d6;
+    urgent-background:           #1d1f21;
+    selected-urgent-background:  #e06b74;
+    background-color:            #17191c;
+    active-background:           #1d1f21;
+    selected-active-background:  #4491ed;
+}
+window {
+    location:         northeast;
+    y-offset:         32px;
+    background-color: @bg-col;
+    border-color:     @border-col;
+    width:            348px;
+    border:           3px;
+}
+mainbox {
+    border:  0;
+    padding: 4px;
+}
+message {
+    border:       2px 0px;
+    border-color: @grey;
+    padding:      1px;
+}
+textbox {
+    text-color: @fg-col;
+}
+listview {
+    fixed-height: 0;
+    border:       2px 0px 0px;
+    border-color: @grey;
+    spacing:      2px;
+    scrollbar:    false;
+    columns:      7;
+    lines:        6;
+}
+element {
+    border:  0;
+}
+element-text {
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+    background-color: inherit;
+    text-color:       inherit;
+}
+element.normal.normal, element.alternate.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element.normal.urgent, element.alternate.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+element.normal.active, element.alternate.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+}
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+}
+prompt {
+    spacing:    0;
+    text-color: @fg-col;
+}
+inputbar {
+    spacing:    0;
+    text-color: @fg-col;
+    padding:    1px;
+    children:   [ prompt ];
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 1.3em 0em 0em ;
+    text-color: @normal-foreground;
+}
+
+// vim: ft=css
