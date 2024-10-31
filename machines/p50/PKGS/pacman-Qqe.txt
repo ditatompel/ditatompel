@@ -109,6 +109,7 @@ thinkfan
 thunderbird
 tlp
 tmux
+tor
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 udisks2
