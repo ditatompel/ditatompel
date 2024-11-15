@@ -46,6 +46,9 @@
 # polybar config
 + /home/ditatompel/.config/polybar/
 + /home/ditatompel/.config/polybar/***
+# dunst config
++ /home/ditatompel/.config/dunst/
++ /home/ditatompel/.config/dunst/dunstrc
 # rofi config
 + /home/ditatompel/.config/rofi/
 + /home/ditatompel/.config/rofi/***
