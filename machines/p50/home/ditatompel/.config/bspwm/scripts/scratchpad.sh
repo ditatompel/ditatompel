@@ -24,7 +24,8 @@ hide_all_except_current(){
   for id in $(bspc query -d focused -N -n .floating.sticky.!hidden)
   do
     bspc query --node "${id}" -T \
-      | grep -qv "${app}" && bspc node "${id}" --flag hidden=on
+      | grep -qvE "(${app}|showmethekey-gtk)" \
+      && bspc node "${id}" --flag hidden=on
   done
 }
 

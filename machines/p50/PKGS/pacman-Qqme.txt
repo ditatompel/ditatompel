@@ -1,3 +1,4 @@
+showmethekey
 telegraf-bin
 thinkfan
 winbox

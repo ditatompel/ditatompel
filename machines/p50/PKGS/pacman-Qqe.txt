@@ -98,7 +98,7 @@ ripgrep
 rofi
 rsync
 scrcpy
-screenkey
+showmethekey
 sshfs
 sudo
 swtpm
