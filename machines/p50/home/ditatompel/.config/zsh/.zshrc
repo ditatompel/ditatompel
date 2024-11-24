@@ -6,7 +6,7 @@ HISTSIZE=50500 # number of commands that are loaded into memory from history fil
 # options. See `man zshoptions`
 setopt PROMPT_SUBST
 
-setopt EXTENDED_HISTORY
+#setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
@@ -177,5 +177,11 @@ function screenrecord () {
 
   echo "Video saved: $output"
 }
+
+# In this machine, the `HISHTORY_PATH` and `HISHTORY_SERVER` is set in
+# `~/.zshenv` file.
+# already set in `~/.zshenv` file.
+export PATH="$PATH:/home/ditatompel/.config/hishtory"
+source /home/ditatompel/.config/hishtory/config.zsh
 
 # vim: set ts=2 sw=2 et:
