@@ -29,6 +29,7 @@
 + /home/ditatompel/.config/nvim/lua/options.lua
 + /home/ditatompel/.config/nvim/lua/keymaps.lua
 + /home/ditatompel/.config/nvim/lua/lazy-plugins.lua
++ /home/ditatompel/.config/nvim/lua/custom/
 + /home/ditatompel/.config/nvim/lua/custom/plugins/
 + /home/ditatompel/.config/nvim/lua/custom/plugins/init.lua
 + /home/ditatompel/.config/nvim/lua/custom/plugins/gopher.lua
@@ -85,7 +86,7 @@
 + /home/ditatompel/.local/scripts/system/screenshot.sh
 # /etc configs
 + /etc/
-#+ /etc/environment
++ /etc/environment
 + /etc/mkinitcpio.conf
 + /etc/default/
 + /etc/default/grub
@@ -98,7 +99,7 @@
 # xorg
 + /etc/X11/
 + /etc/X11/xorg.conf.d/
-#+ /etc/X11/xorg.conf.d/10-nvidia.conf
++ /etc/X11/xorg.conf.d/10-nvidia.conf
 + /etc/X11/xorg.conf.d/30-touchpad.conf
 # udev
 + /etc/udev/
