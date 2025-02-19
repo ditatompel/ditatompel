@@ -215,8 +215,8 @@ return {
         ts_ls = {},
         svelte = { filetypes = { 'svelte' } },
         lua_ls = {
-          -- cmd = {...},
-          -- filetypes = { ...},
+          -- cmd = { ... },
+          -- filetypes = { ... },
           -- capabilities = {},
           settings = {
             Lua = {
