@@ -52,7 +52,7 @@ export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql_history"
 
 # Hishtory
 export HISHTORY_PATH=.config/hishtory
-export HISHTORY_SERVER="http://192.168.2.22:43680"
+export HISHTORY_SERVER="http://192.168.2.22:45680"
 
 # Colorized manpage (less)
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
