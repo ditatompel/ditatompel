@@ -6,7 +6,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 # X11
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+#export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
 # Editor
 export EDITOR="/usr/bin/nvim"
