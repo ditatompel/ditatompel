@@ -75,6 +75,7 @@ nvidia-settings
 nvidia-utils
 nvtop
 obs-studio
+onefetch
 opencl-nvidia
 opencv
 openssh
