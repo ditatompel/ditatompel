@@ -77,8 +77,8 @@ if [[ $(xrandr -q | grep -e "^${EXTERN} connected") ]]; then
   polybar --reload secondary -c ~/.config/polybar/config.ini \
     </dev/null >/var/tmp/polybar-secondary.log 2>&1 200>&- &
 else
-  polybar --reload primary -c ~/.config/polybar/config.ini \
-    </dev/null >/var/tmp/polybar-primary.log 2>&1 200>&- &
+  polybar --reload single -c ~/.config/polybar/config.ini \
+    </dev/null >/var/tmp/polybar-single.log 2>&1 200>&- &
 fi
 
 # vim: set ts=2 sw=2 et:
