@@ -42,7 +42,7 @@ if [[ ! -z "$EXTERN" ]]; then # external monitor connected
   # set xrandr rules for docked setup
   xrandr \
     --output "$INTERN" --primary --mode 1920x1080 --pos 0x0 --rotate normal \
-    --output "$EXTERN" --mode 1920x1080 --pos 1920x0 --rotate normal
+    --output "$EXTERN" --mode 2560x1440 --pos 1920x0 --rotate normal
 
   if [[ $(bspc query -D -m "${EXTERN}" | wc -l) -ne 5 ]]; then
     monitor_add
