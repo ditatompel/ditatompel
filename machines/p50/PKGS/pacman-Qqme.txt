@@ -1,3 +1,4 @@
+localsend-bin
 showmethekey
 telegraf-bin
 thinkfan

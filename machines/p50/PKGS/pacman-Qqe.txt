@@ -52,6 +52,7 @@ libvips
 libvirt
 linux
 linux-firmware
+localsend-bin
 man-db
 mariadb
 mesa
