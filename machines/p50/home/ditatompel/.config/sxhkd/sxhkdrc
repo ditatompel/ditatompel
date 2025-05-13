@@ -112,6 +112,22 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} '^{1-9,10}'
 
+# bspc: focus to desktop 11.
+super + minus
+    bspc desktop -f ^11
+
+# bspc: send to desktop 11.
+super + shift + minus
+    bspc node -d ^11
+
+# bspc: focus to desktop 12.
+super + equal
+    bspc desktop -f ^12
+
+# bspc: send to desktop 12.
+super + shift + equal
+    bspc node -d ^12
+
 # bspc: Alternate between the tiled and monocle desktop layout.
 super + m
     bspc desktop -l next

@@ -11,7 +11,7 @@ EXTERN=$(echo "$RANDR" | awk '/ connected/{print $1}' | grep -v "$INTERN")
 
 monitor_add() {
   # Move last 5 desktops to external monitor
-  for desktop in {6..10}
+  for desktop in {6..12}
   do
     bspc desktop "$desktop" --to-monitor "$EXTERN"
   done
@@ -35,7 +35,7 @@ monitor_remove() {
   # delete default desktops
   bspc desktop Desktop --remove
   # reorder desktops
-  bspc monitor "$INTERN" -o {1..12}
+  bspc monitor "$INTERN" -o {1..14}
 }
 
 if [[ ! -z "$EXTERN" ]]; then # external monitor connected
@@ -44,7 +44,7 @@ if [[ ! -z "$EXTERN" ]]; then # external monitor connected
     --output "$INTERN" --primary --mode 1920x1080 --pos 0x0 --rotate normal \
     --output "$EXTERN" --mode 2560x1440 --pos 1920x0 --rotate normal
 
-  if [[ $(bspc query -D -m "${EXTERN}" | wc -l) -ne 5 ]]; then
+  if [[ $(bspc query -D -m "${EXTERN}" | wc -l) -ne 6 ]]; then
     monitor_add
   fi
   bspc wm -O "$INTERN" "$EXTERN"
@@ -53,7 +53,7 @@ else
   xrandr \
     --output "$INTERN" --primary --mode 1920x1080 --pos 0x0 --rotate normal \
     --output "$EXTERN" --off
-  if [[ $(bspc query -D -m "${INTERN}" | wc -l) -ne 10 ]]; then
+  if [[ $(bspc query -D -m "${INTERN}" | wc -l) -ne 12 ]]; then
     monitor_remove
   fi
 fi
