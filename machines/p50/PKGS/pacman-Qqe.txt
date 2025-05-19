@@ -94,7 +94,6 @@ python-virtualenv
 qemu-desktop
 qt6-tools
 rclone
-redis
 remmina
 ripgrep
 rofi
@@ -118,6 +117,7 @@ ttf-jetbrains-mono-nerd
 udisks2
 unzip
 usbutils
+valkey
 vim
 virt-manager
 weechat
