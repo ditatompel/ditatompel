@@ -7,15 +7,18 @@
 # For more detailed information, read:
 # https://miikanissi.com/blog/hotplug-dual-monitor-setup-bspwm/
 
-RANDR=$(xrandr)
-INTERN=$(echo "$RANDR" | awk '/ primary/{print $1}')
-if [ "$INTERN" = "DP-0" ]; then
-  # this indicate this machine xorg setting is set using NVIDIA.
-  # change internal monitor to eDP-1-1
-  INTERN="eDP-1-1"
-  # set eDP-1-1 as primary monitor
-  xrandr --output "$INTERN" --primary
-fi
+# RANDR=$(xrandr)
+# INTERN=$(echo "$RANDR" | awk '/ primary/{print $1}')
+# if [ "$INTERN" = "DP-0" ]; then
+#   # this indicate this machine xorg setting is set using NVIDIA.
+#   # change internal monitor to eDP-1-1
+#   INTERN="eDP-1-1"
+#   # set eDP-1-1 as primary monitor
+#   xrandr --output "$INTERN" --primary
+# fi
+
+INTERN="eDP-1-1"
+xrandr --output "$INTERN" --primary
 
 # Specific for this machine:
 # HDMI Port = DP-1
