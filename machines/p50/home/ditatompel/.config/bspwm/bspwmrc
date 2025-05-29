@@ -22,7 +22,8 @@ xrandr --output "$INTERN" --primary
 
 # Specific for this machine:
 # HDMI Port = DP-1
-# Mini DP Port = DP-3
+# MiniDP = DP-3
+# MiniDP 1.2 = DP-3.8
 EXTERN="DP-3"
 
 ## on first load, setup default workspaces
