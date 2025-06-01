@@ -1,6 +1,8 @@
 # T420 Config
 
-> **NOTE**: This machine is **DEAD**, RIP! Everything under this directory will not be updated again!
+> **NOTE**: This machine was previously **DEAD**, but now it has been revived
+> and its main function will be used as a "server". The configuration will be
+> updated gradually.
 
 This is my personal laptop config file. The configurations under this directory is not intended to "rice" your desktop. Maybe this dotfiles repo is one of most boring desktop you ever see, trust me! No compositor, no transparency, no animation, nothing. Just basic BSPWM with polybar plus my most used app config.
 
