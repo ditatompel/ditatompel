@@ -1,4 +1,5 @@
 localsend-bin
+obs-studio-git
 showmethekey
 telegraf-bin
 thinkfan

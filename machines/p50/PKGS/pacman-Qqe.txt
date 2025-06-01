@@ -76,7 +76,7 @@ nvidia-prime
 nvidia-settings
 nvidia-utils
 nvtop
-obs-studio
+obs-studio-git
 onefetch
 opencl-nvidia
 opencv
