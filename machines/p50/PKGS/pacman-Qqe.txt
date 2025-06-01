@@ -52,6 +52,7 @@ libvips
 libvirt
 linux
 linux-firmware
+linux-headers
 localsend-bin
 man-db
 mariadb
@@ -117,6 +118,7 @@ ttf-jetbrains-mono-nerd
 udisks2
 unzip
 usbutils
+v4l2loopback-dkms
 valkey
 vim
 virt-manager
