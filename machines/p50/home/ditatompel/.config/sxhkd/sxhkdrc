@@ -18,13 +18,13 @@ super + alt + {space,e,m}
 super + Escape
     pkill -USR1 -x sxhkd
 
-# alacritty: Launch terminal emulator.
+# alacritty: Launch terminal emulator. 
 super + Return
-    prime-run alacritty msg create-window || prime-run alacritty
+    alacritty msg create-window || alacritty
 
 # yazi: Launch CLI file manager.
 super + e
-    prime-run alacritty -e yazi
+    alacritty -e yazi
 
 # pcmanfm: Launch GUI file manager.
 super + shift + e
