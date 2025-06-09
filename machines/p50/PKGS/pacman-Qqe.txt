@@ -76,6 +76,7 @@ nvidia-prime
 nvidia-settings
 nvidia-utils
 nvtop
+obs-multi-rtmp
 obs-studio-git
 onefetch
 opencl-nvidia
