@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[manager]
+[mgr]
 prepend_keymap = [
     { on = "l", run = 'plugin --sync smart-enter', desc = "Enter the child directory, or open the file" },
     { on = "p", run = 'plugin --sync smart-paste', desc = "Paste into the hovered directory or CWD" },
