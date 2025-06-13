@@ -48,7 +48,11 @@ precmd() {
     unset timer
   fi
 
-  USER_FMT="%F{green}%n%f"
+  #USER_FMT="%F{green}%n%f"
+  # Right now, I don't want to show regular user in the prompt. If you want to
+  # show your user in the prompt, uncomment `USER_FMT` above and comment out
+  # `USER_FMT` below.
+  USER_FMT="%F{green}user%f"
   if [ "$(id -u)" -eq 0 ]; then
     USER_FMT="%F{red}%n%f"
   fi
