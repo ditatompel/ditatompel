@@ -57,3 +57,8 @@ export HISHTORY_SERVER="http://192.168.2.22:45680"
 # Colorized manpage (less)
 export MANPAGER="less -R --use-color -Dd+r -Du+b"
 export MANROFFOPT="-P -c"
+
+# Change the default password prompt for sudo.
+# See manual page of inline `-p` or `--prompt` for available escape sequences.
+# Eg: export SUDO_PROMPT=$'\a[sudo] password for %p: '
+export SUDO_PROMPT=$'\a[sudo] Prove you\'re worthy, enter the holy key: '
