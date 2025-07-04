@@ -107,7 +107,6 @@ steam
 sudo
 swtpm
 sxhkd
-telegraf-bin
 telegram-desktop
 thinkfan
 thunderbird
@@ -126,7 +125,6 @@ virt-manager
 weechat
 wget
 whois
-winbox
 wireguard-tools
 wireplumber
 xbindkeys

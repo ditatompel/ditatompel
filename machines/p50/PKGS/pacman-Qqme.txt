@@ -2,7 +2,5 @@ localsend-bin
 obs-multi-rtmp
 obs-studio-git
 showmethekey
-telegraf-bin
 thinkfan
-winbox
 yay
