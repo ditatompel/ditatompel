@@ -141,7 +141,7 @@ function yta() {
 # Search and play YouTube video
 function ytv() {
   mpv \
-    --ytdl-format="bestvideo[height<=?720][vcodec!~='vp0?9']+bestaudio/best" \
+    --ytdl-format="bestvideo[height<=?720][vcodec!~='^(vp0?9|av01)']+bestaudio/best" \
     ytdl://ytsearch:"$*"
 }
 
