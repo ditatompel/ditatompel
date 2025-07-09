@@ -22,13 +22,17 @@ monitor_add() {
 
   for desktop in {6..10}
   do
-    bspc desktop "$desktop" --to-monitor "$EXTERNAL_MONITOR"
+    # bspc desktop "$desktop" --to-monitor "$EXTERNAL_MONITOR"
+    bspc desktop "$desktop" --to-monitor "$INTERNAL_MONITOR"
+
   done
 
   # Remove default desktop created by bspwm
   bspc desktop Desktop --remove
   # reorder monitors
-  bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
+  # bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
+  bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
+
 }
 
 monitor_remove() {
@@ -50,11 +54,14 @@ monitor_remove() {
 
 if [[ ! -z "$EXTERNAL_MONITOR" ]]; then # external monitor connected
   # set xrandr rules for docked setup
-  xrandr --output "$INTERNAL_MONITOR" --primary --mode 1600x900 --pos 0x0 --rotate normal --output "$EXTERNAL_MONITOR" --mode 1280x1024 --pos 1600x0 --rotate normal
+  # xrandr --output "$INTERNAL_MONITOR" --primary --mode 1600x900 --pos 0x0 --rotate normal --output "$EXTERNAL_MONITOR" --mode 1280x1024 --pos 1600x0 --rotate normal
+  xrandr --output "$EXTERNAL_MONITOR" --primary --mode 1280x1024 --pos 0x0 --rotate normal --output "$INTERNAL_MONITOR" --mode 1600x900 --pos 1280x0 --rotate normal
+
   if [[ $(bspc query -D -m "${EXTERNAL_MONITOR}" | wc -l) -ne 5 ]]; then
     monitor_add
   fi
-  bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
+  # bspc wm -O "$INTERNAL_MONITOR" "$EXTERNAL_MONITOR"
+  bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
 else
   # set xrandr rules for mobile setup
   xrandr --output "$INTERNAL_MONITOR" --primary --mode 1600x900 --pos 0x0 --rotate normal --output "$EXTERNAL_MONITOR" --off

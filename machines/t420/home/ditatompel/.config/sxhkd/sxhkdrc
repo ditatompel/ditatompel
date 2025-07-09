@@ -120,9 +120,9 @@ ctrl + shift + Print
 super + shift + e
     pcmanfm -n
 
-# Launch file manager (Ranger)
+# Launch file manager (Yazi)
 super + e
-    WINIT_X11_SCALE_FACTOR=1.33 alacritty -e ranger
+    WINIT_X11_SCALE_FACTOR=1.33 alacritty -e yazi
 
 # close and kill window
 alt + F4
@@ -155,3 +155,11 @@ super + F1
 # Lock Screen
 super + shift + F2
     ~/.local/scripts/system/i3lock.sh
+
+# scratchpads
+super + alt + {w,m,i,space,b}
+    ~/.local/scripts/system/scratchpad.sh {newsboat,neomutt,nnn,terminal,btop}
+
+# launch firefox
+super + shift + f
+    firefox-developer-edition -P ditatompel
