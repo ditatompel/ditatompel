@@ -2,7 +2,16 @@
 
 Replacement for my [ThinkPad T420](../t420).
 
-This repo is far from complete, I'll update this repo during my spare time.
+This is my personal laptop config file. The configurations under this directory
+is not intended to _rice_ your desktop. Maybe this dotfiles repo is one of most
+boring desktop you ever see, trust me! No compositor, no transparency, no
+animation, nothing. Just basic BSPWM with polybar plus my most used app config.
+
+I put my configs and scripts here for my self, to make me easier moving my
+machine to the new one if something bad happen to my beloved laptop. But,
+if you find it useful for you, just clone and edit to fit with your need.
+
+> This repo is far from complete, I'll update this repo during my spare time.
 
 ## System Hardware
 
