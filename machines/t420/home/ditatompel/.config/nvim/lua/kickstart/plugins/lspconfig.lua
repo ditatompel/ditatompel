@@ -210,7 +210,20 @@ return {
       local servers = {
         --See `:help lspconfig-all` for a list of all the pre-configured LSPs
         clangd = {},
-        shellcheck = {},
+        rust_analyzer = {},
+        zls = {},
+        prettierd = {
+          filetypes = {
+            'javascript',
+            'typescript',
+            'css',
+            'scss',
+            'html',
+            'json',
+            'yaml',
+            'markdown',
+          },
+        },
         gopls = {
           filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
           settings = {
@@ -229,26 +242,10 @@ return {
         },
         gofumpt = {},
         goimports = {},
-        rust_analyzer = {},
-        zls = {},
-        phpactor = {},
-        -- intelephense = { filetypes = { 'php' } },
-        svelte = { filetypes = { 'svelte' } },
-        htmx = { filetypes = { 'html' } },
         templ = { filetypes = { 'templ' } },
-        prettierd = {
-          filetypes = {
-            'javascript',
-            'typescript',
-            'css',
-            'scss',
-            'html',
-            'json',
-            'yaml',
-            'markdown',
-          },
-        },
+        htmx = { filetypes = { 'html' } },
         ts_ls = {},
+        svelte = { filetypes = { 'svelte' } },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -263,6 +260,9 @@ return {
             },
           },
         },
+        shellcheck = {},
+        phpactor = {},
+        -- intelephense = { filetypes = { 'php' } },
       }
 
       -- Ensure the servers and tools above are installed
