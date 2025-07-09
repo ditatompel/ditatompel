@@ -17,6 +17,9 @@
 # tmux config
 + /home/ditatompel/.config/tmux/
 + /home/ditatompel/.config/tmux/tmux.conf
+# alacritty config
++ /home/ditatompel/.config/alacritty
++ /home/ditatompel/.config/alacritty/***
 # nvim config
 + /home/ditatompel/.config/nvim/
 + /home/ditatompel/.config/nvim/init.lua

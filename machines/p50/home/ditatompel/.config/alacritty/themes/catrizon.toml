@@ -1,0 +1,60 @@
+# Colors (Catrizon)
+# Color scheme based from horizon-dark and catppucin mocha
+# (mostly use horizon-dark's color).
+
+[colors.primary]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[colors.cursor]
+text = "#1e1e2e"
+cursor = "#f5e0dc"
+
+[colors.vi_mode_cursor]
+text = "#1e1e2e"
+cursor = "#b4befe"
+
+[colors.search.matches]
+foreground = "#1e1e2e"
+background = "#a6adc8"
+
+[colors.search.focused_match]
+foreground = "#1e1e2e"
+background = "#a6e3a1"
+
+[colors.footer_bar]
+foreground = "#1e1e2e"
+background = "#a6adc8"
+
+[colors.hints.start]
+foreground = "#1e1e2e"
+background = "#f9e2af"
+
+[colors.hints.end]
+foreground = "#1e1e2e"
+background = "#a6adc8"
+
+[colors.selection]
+text = "#1e1e2e"
+background = "#f5e0dc"
+
+[colors.normal]
+black = "#16161c"
+red = "#e95678"
+green = "#29d398"
+yellow = "#fab795"
+#blue = "#26bbd9"
+blue = "#209bb3"
+magenta = "#ee64ac"
+cyan = "#59e1e3"
+white = "#d5d8da"
+
+[colors.bright]
+black = "#5b5858"
+red = "#ec6a88"
+green = "#3fdaa4"
+yellow = "#fbc3a7"
+blue = "#3fc4de"
+magenta = "#f075b5"
+cyan = "#6be4e6"
+white = "#d5d8da"

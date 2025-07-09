@@ -1,0 +1,51 @@
+[general]
+import = ["/home/ditatompel/.config/alacritty/themes/catrizon.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 8.5
+
+[font.bold]
+family = "JetBrainsMono NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono NF"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono NF"
+style = "Regular"
+
+[cursor]
+blink_interval = 250
+blink_timeout = 0
+
+[cursor.style]
+#blinking = "Always"
+blinking = "Off"
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = false
+mods = "None"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
