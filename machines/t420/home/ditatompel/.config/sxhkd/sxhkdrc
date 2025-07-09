@@ -120,9 +120,9 @@ ctrl + shift + Print
 super + shift + e
     pcmanfm -n
 
-# Launch file manager (Ranger)
+# Launch file manager (Yazi)
 super + e
-    WINIT_X11_SCALE_FACTOR=1.33 alacritty -e ranger
+    WINIT_X11_SCALE_FACTOR=1.33 alacritty -e yazi
 
 # close and kill window
 alt + F4
