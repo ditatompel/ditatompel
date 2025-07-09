@@ -36,11 +36,19 @@ fi
 # Keyboard rate speed and delay 
 xset r rate 250 30 &
 
+# disable monitor sleep when no activity
+xset -dpms
+xset s off
+
+# Swap escape and capslock
+# setxkbmap -option caps:swapescape
+
 # Bind key volume Lenovo T420
 xbindkeys
 
-eval $(gnome-keyring-daemon --start)
-export SSH_AUTH_SOCK
+#eval $(gnome-keyring-daemon --start)
+#export SSH_AUTH_SOCK
+eval $(ssh-agent)
 
 #exec openbox-session
 exec bspwm
