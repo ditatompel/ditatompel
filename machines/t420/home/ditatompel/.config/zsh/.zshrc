@@ -1,11 +1,12 @@
 # Created by ditatompel for 5.9
 
-HISTSIZE=10500
-SAVEHIST=10000
+SAVEHIST=50000 # number of commands stored in zsh history file
+HISTSIZE=50500 # number of commands that are loaded into memory from history file
 
 # options. See `man zshoptions
 setopt PROMPT_SUBST
 
+#setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
@@ -89,10 +90,14 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
   add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-export EDITOR="/usr/bin/nvim"
-
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+
+# PATHs
+#######
+# Local bin, Go bin, Bun bin
+#export PATH="$PATH:$HOME/.local/bin:$(go env GOPATH)/bin:$BUN_INSTALL/bin"
+export PATH="$PATH:$HOME/.local/bin:$(go env GOPATH)/bin:$CARGO_HOME/bin:$BUN_INSTALL/bin"
 
 # common Aliases
 ################
@@ -108,20 +113,21 @@ alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
 alias alacritty="WINIT_X11_SCALE_FACTOR=1.33 alacritty"
 # List Packages That Depend On Another Package with Pacman (by Adam Douglas)
 # https://www.adamsdesk.com/posts/pacman-reverse-package-dependencies/
+# This require fzf and pactree which provided by `pacman-contrib` package.
 alias pkgdep="pacman -Qq | fzf --preview 'pactree -lur {} | sort' --layout reverse --bind 'enter:execute(pactree -lu {} | sort | less)'"
 [ "$TERM" = "alacritty" ] && alias ssh="TERM=xterm-256color ssh"
 
-# Colirized manpage (less)
-export MANPAGER="less -R --use-color -Dd+r -Du+b"
-export MANROFFOPT="-P -c"
-
-# PATHs
-#######
-# Go bin and RVM
-export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin:$HOME/.rvm/bin"
-
 # App functions
 ###############
+# xclip
+ccat() {
+  if [ -f "$1" ]; then
+    cat "$1" | xclip -selection clipboard
+  else
+    echo "File not found: $1"
+  fi
+}
+
 # MPV
 # youtube-dl is requried
 # Search and play YouTube audio
@@ -132,5 +138,50 @@ function yta() {
 function ytv() {
   mpv --ytdl-format='bestvideo[height<=?720]+bestaudio/best' ytdl://ytsearch:"$*"
 }
+
+# Pull and merge shortcut for personal projects
+# $1 = remote origin
+# $2 = destination branch
+# $3 = source branch
+function pullandmerge() {
+  git pull "$1" "$2" && git checkout "$3" && git merge "$2" && git push -u "$1" "$3"
+}
+
+# Screen recording
+# This is wrapper function to record screen using ffmpeg (without audio).
+function screenrecord () {
+  local output="record.mkv"
+  if [[ "$1" == *.mkv ]]; then
+    output="$1"
+  fi
+
+  # To take a screencast with lossless encoding and without audio:
+  # ffmpeg -f x11grab -i "$DISPLAY" -video_size 1280x1920 -c:v ffvhuff "$output"
+
+  # When using the proprietary NVIDIA driver with the nvidia-utils,
+  # NVENC and NVDEC can be used for encoding/decoding.
+  # To print available options execute (hevc_nvenc may also be available):
+  # ffmpeg -help encoder=h264_nvenc
+  # See; https://wiki.archlinux.org/title/FFmpeg#NVIDIA_NVENC/NVDEC
+  ffmpeg -f x11grab -video_size 1280x1024 -framerate 60 -i $DISPLAY \
+    -f pulse -i 0 -c:v libx264 -preset ultrafast -c:a aac "$output"
+
+  echo "Video saved: $output"
+}
+
+function yy() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
+}
+
+# Hishtory Config
+# In this machine, the `HISHTORY_PATH` and `HISHTORY_SERVER` is set in
+# `~/.zshenv` file.
+export PATH="$PATH:/home/ditatompel/.config/hishtory"
+source /home/ditatompel/.config/hishtory/config.zsh
 
 # vim: set ts=2 sw=2 et:
