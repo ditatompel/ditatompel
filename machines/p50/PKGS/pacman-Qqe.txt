@@ -22,7 +22,6 @@ docker-buildx
 docker-compose
 dunst
 efibootmgr
-f2fs-tools
 fastfetch
 fd
 feh
@@ -113,7 +112,6 @@ thunderbird
 tlp
 tmux
 tor
-ttf-font-awesome
 ttf-jetbrains-mono-nerd
 udisks2
 unzip
@@ -127,6 +125,7 @@ wget
 whois
 wireguard-tools
 wireplumber
+woff2-font-awesome
 xbindkeys
 xclip
 xorg-server
