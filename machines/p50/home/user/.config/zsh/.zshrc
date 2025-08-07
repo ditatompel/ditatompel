@@ -180,7 +180,7 @@ function screenrecord () {
 
 # In this machine, the `HISHTORY_PATH` and `HISHTORY_SERVER` is set in
 # `~/.zshenv` file.
-export PATH="$PATH:/home/ditatompel/.config/hishtory"
-source /home/ditatompel/.config/hishtory/config.zsh
+export PATH="$PATH:/home/user/.config/hishtory"
+source /home/user/.config/hishtory/config.zsh
 
 # vim: set ts=2 sw=2 et:

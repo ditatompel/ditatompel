@@ -32,7 +32,7 @@ super + shift + e
 
 # firefox: Launch Firefox browser using specific profile (my profile).
 super + shift + f
-    firefox-developer-edition -P ditatompel
+    firefox-developer-edition -P dt
 
 # firefox: Launch Firefox browser in new private window
 super + shift + p

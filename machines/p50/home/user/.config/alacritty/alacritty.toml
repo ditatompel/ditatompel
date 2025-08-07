@@ -1,5 +1,5 @@
 [general]
-import = ["/home/ditatompel/.config/alacritty/themes/catrizon.toml"]
+import = ["/home/user/.config/alacritty/themes/catrizon.toml"]
 
 [env]
 TERM = "xterm-256color"

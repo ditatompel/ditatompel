@@ -1,92 +1,92 @@
 # TODO: Review sync ditatompel's .local files
 # TODO: Sync system wide config files
 + /home/
-+ /home/ditatompel/
-+ /home/ditatompel/.zshenv
-+ /home/ditatompel/.xbindkeysrc
-+ /home/ditatompel/.config/
++ /home/user/
++ /home/user/.zshenv
++ /home/user/.xbindkeysrc
++ /home/user/.config/
 # X11 config
-+ /home/ditatompel/.config/X11/
-+ /home/ditatompel/.config/X11/***
-+ /home/ditatompel/.config/xbindkeys/
-+ /home/ditatompel/.config/xbindkeys/config
++ /home/user/.config/X11/
++ /home/user/.config/X11/***
++ /home/user/.config/xbindkeys/
++ /home/user/.config/xbindkeys/config
 # zsh config
-+ /home/ditatompel/.config/zsh/
-+ /home/ditatompel/.config/zsh/prompt.zsh
-+ /home/ditatompel/.config/zsh/.zshrc
++ /home/user/.config/zsh/
++ /home/user/.config/zsh/prompt.zsh
++ /home/user/.config/zsh/.zshrc
 # tmux config
-+ /home/ditatompel/.config/tmux/
-+ /home/ditatompel/.config/tmux/tmux.conf
++ /home/user/.config/tmux/
++ /home/user/.config/tmux/tmux.conf
 # alacritty config
-+ /home/ditatompel/.config/alacritty
-+ /home/ditatompel/.config/alacritty/***
++ /home/user/.config/alacritty
++ /home/user/.config/alacritty/***
 # nvim config
-+ /home/ditatompel/.config/nvim/
-+ /home/ditatompel/.config/nvim/init.lua
-+ /home/ditatompel/.config/nvim/.gitignore
-+ /home/ditatompel/.config/nvim/.stylua.toml
-+ /home/ditatompel/.config/nvim/README.md
-+ /home/ditatompel/.config/nvim/init.lua
-+ /home/ditatompel/.config/nvim/LICENSE.md
-+ /home/ditatompel/.config/nvim/lua/
-+ /home/ditatompel/.config/nvim/lua/options.lua
-+ /home/ditatompel/.config/nvim/lua/keymaps.lua
-+ /home/ditatompel/.config/nvim/lua/lazy-plugins.lua
-+ /home/ditatompel/.config/nvim/lua/custom/
-+ /home/ditatompel/.config/nvim/lua/custom/plugins/
-+ /home/ditatompel/.config/nvim/lua/custom/plugins/init.lua
-+ /home/ditatompel/.config/nvim/lua/custom/plugins/gopher.lua
-+ /home/ditatompel/.config/nvim/lua/kickstart/***
++ /home/user/.config/nvim/
++ /home/user/.config/nvim/init.lua
++ /home/user/.config/nvim/.gitignore
++ /home/user/.config/nvim/.stylua.toml
++ /home/user/.config/nvim/README.md
++ /home/user/.config/nvim/init.lua
++ /home/user/.config/nvim/LICENSE.md
++ /home/user/.config/nvim/lua/
++ /home/user/.config/nvim/lua/options.lua
++ /home/user/.config/nvim/lua/keymaps.lua
++ /home/user/.config/nvim/lua/lazy-plugins.lua
++ /home/user/.config/nvim/lua/custom/
++ /home/user/.config/nvim/lua/custom/plugins/
++ /home/user/.config/nvim/lua/custom/plugins/init.lua
++ /home/user/.config/nvim/lua/custom/plugins/gopher.lua
++ /home/user/.config/nvim/lua/kickstart/***
 # bspwm config
-+ /home/ditatompel/.config/bspwm/
-+ /home/ditatompel/.config/bspwm/***
++ /home/user/.config/bspwm/
++ /home/user/.config/bspwm/***
 # sxhkd config
-+ /home/ditatompel/.config/sxhkd/
-+ /home/ditatompel/.config/sxhkd/***
++ /home/user/.config/sxhkd/
++ /home/user/.config/sxhkd/***
 # pipewire config
-+ /home/ditatompel/.config/pipewire/
-+ /home/ditatompel/.config/pipewire/pipewire.conf.d/
-+ /home/ditatompel/.config/pipewire/pipewire.conf.d/99-input-denoising.conf
++ /home/user/.config/pipewire/
++ /home/user/.config/pipewire/pipewire.conf.d/
++ /home/user/.config/pipewire/pipewire.conf.d/99-input-denoising.conf
 # polybar config
-+ /home/ditatompel/.config/polybar/
-+ /home/ditatompel/.config/polybar/***
++ /home/user/.config/polybar/
++ /home/user/.config/polybar/***
 # dunst config
-+ /home/ditatompel/.config/dunst/
-+ /home/ditatompel/.config/dunst/dunstrc
++ /home/user/.config/dunst/
++ /home/user/.config/dunst/dunstrc
 # rofi config
-+ /home/ditatompel/.config/rofi/
-+ /home/ditatompel/.config/rofi/***
++ /home/user/.config/rofi/
++ /home/user/.config/rofi/***
 # mpv config
-+ /home/ditatompel/.config/mpv/
-+ /home/ditatompel/.config/mpv/mpv.conf
++ /home/user/.config/mpv/
++ /home/user/.config/mpv/mpv.conf
 # yazi config
-+ /home/ditatompel/.config/yazi/
-+ /home/ditatompel/.config/yazi/yazi.toml
-+ /home/ditatompel/.config/yazi/.stylua.toml
-+ /home/ditatompel/.config/yazi/init.lua
-+ /home/ditatompel/.config/yazi/keymap.toml
-+ /home/ditatompel/.config/yazi/plugins/
-+ /home/ditatompel/.config/yazi/plugins/***
++ /home/user/.config/yazi/
++ /home/user/.config/yazi/yazi.toml
++ /home/user/.config/yazi/.stylua.toml
++ /home/user/.config/yazi/init.lua
++ /home/user/.config/yazi/keymap.toml
++ /home/user/.config/yazi/plugins/
++ /home/user/.config/yazi/plugins/***
 # psd config
-+ /home/ditatompel/.config/psd/
-+ /home/ditatompel/.config/psd/psd.conf
++ /home/user/.config/psd/
++ /home/user/.config/psd/psd.conf
 # fastfetch config
-+ /home/ditatompel/.config/fastfetch/
-+ /home/ditatompel/.config/fastfetch/config.jsonc
++ /home/user/.config/fastfetch/
++ /home/user/.config/fastfetch/config.jsonc
 # .local
-+ /home/ditatompel/.local/
++ /home/user/.local/
 # share
-+ /home/ditatompel/.local/share/
-+ /home/ditatompel/.local/share/applications/
-+ /home/ditatompel/.local/share/applications/com.obsproject.Studio.desktop
-+ /home/ditatompel/.local/share/applications/mpv.desktop
-+ /home/ditatompel/.local/share/applications/numbat.desktop
-+ /home/ditatompel/.local/share/applications/org.kde.kdenlive.desktop
++ /home/user/.local/share/
++ /home/user/.local/share/applications/
++ /home/user/.local/share/applications/com.obsproject.Studio.desktop
++ /home/user/.local/share/applications/mpv.desktop
++ /home/user/.local/share/applications/numbat.desktop
++ /home/user/.local/share/applications/org.kde.kdenlive.desktop
 # scripts
-+ /home/ditatompel/.local/scripts/
-+ /home/ditatompel/.local/scripts/system/
-+ /home/ditatompel/.local/scripts/system/backlight.sh
-+ /home/ditatompel/.local/scripts/system/screenshot.sh
++ /home/user/.local/scripts/
++ /home/user/.local/scripts/system/
++ /home/user/.local/scripts/system/backlight.sh
++ /home/user/.local/scripts/system/screenshot.sh
 # /etc configs
 + /etc/
 + /etc/environment
