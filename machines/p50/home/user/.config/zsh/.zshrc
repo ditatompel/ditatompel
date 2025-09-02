@@ -183,4 +183,7 @@ function screenrecord () {
 export PATH="$PATH:/home/user/.config/hishtory"
 source /home/user/.config/hishtory/config.zsh
 
+# bun completions
+[ -s "/home/user/.local/work/bun/_bun" ] && source "/home/user/.local/work/bun/_bun"
+
 # vim: set ts=2 sw=2 et:
