@@ -104,6 +104,7 @@ rofi
 rsync
 scrcpy
 showmethekey
+smartmontools
 sshfs
 steam
 sudo
@@ -126,6 +127,7 @@ virt-manager
 weechat
 wget
 whois
+winbox
 wireguard-tools
 wireplumber
 woff2-font-awesome
