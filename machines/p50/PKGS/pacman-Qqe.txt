@@ -86,7 +86,7 @@ openssh
 optipng
 pacman-contrib
 pass
-pcmanfm-gtk3
+pcmanfm
 pipewire
 pipewire-pulse
 polybar
