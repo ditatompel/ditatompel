@@ -59,6 +59,7 @@
 # mpv config
 + /home/user/.config/mpv/
 + /home/user/.config/mpv/mpv.conf
++ /home/user/.config/mpv/mpv-clipper.conf
 + /home/user/.config/mpv/scripts/***
 + /home/user/.config/mpv/script-opts/***
 # yazi config
