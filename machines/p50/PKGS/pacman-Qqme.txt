@@ -1,6 +1,5 @@
 localsend-bin
 obs-multi-rtmp
 obs-studio-git
-showmethekey
 thinkfan
 yay
