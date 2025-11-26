@@ -32,7 +32,11 @@ super + shift + e
 
 # firefox: Launch Firefox browser using specific profile (my profile).
 super + shift + f
-    firefox-developer-edition -P dt
+    firefox-developer-edition -P yi
+
+# firefox: Launch Firefox browser using specific profile (work profile).
+super + shift + d
+    firefox-developer-edition -P dt --class=ff-dt
 
 # firefox: Launch Firefox browser in new private window
 super + shift + p
