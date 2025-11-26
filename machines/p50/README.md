@@ -36,10 +36,10 @@ if you find it useful for you, just clone and edit to fit with your need.
 TLDR; required packages for this machine running X:
 
 ```
-xorg-server xorg-xrandr xorg-xinit org-xset org-xsetroot \
+xorg-server xorg-xrandr xorg-xinit xorg-xset xorg-xsetroot \
 mesa nvidia nvidia-utils \
 xbindkeys bspwm sxhkd \
-alacritty polybar ttf-jetbrains-mono-nerd ttf-font-awesome
+alacritty polybar rofi ttf-jetbrains-mono-nerd ttf-font-awesome
 ```
 
 For list of explicity installed packages (both from official or AUR), see
