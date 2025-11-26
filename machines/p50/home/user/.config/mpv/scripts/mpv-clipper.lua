@@ -1,5 +1,6 @@
 -- mpv-clipper.lua
 -- Video trimming script for mpv
+-- https://github.com/lunagus/mpv-clipper
 -- Usage:
 --   c: Set start time
 --   v: Set end time
@@ -147,15 +148,15 @@ local function make_clip()
 end
 
 -- Key bindings
-mp.add_key_binding("c", "set-start", function()
+mp.add_key_binding("^", "set-start", function()
 	clip_start = mp.get_property_number("time-pos")
 	mp.osd_message("Clip start: " .. clip_start)
 end)
-mp.add_key_binding("v", "set-end", function()
+mp.add_key_binding("$", "set-end", function()
 	clip_end = mp.get_property_number("time-pos")
 	mp.osd_message("Clip end: " .. clip_end)
 end)
-mp.add_key_binding("b", "make-clip", make_clip)
+mp.add_key_binding("&", "make-clip", make_clip)
 
 -- Cycle quality presets
 local preset_order = { "copy", "high", "medium", "fast", "tiny", "custom" }
