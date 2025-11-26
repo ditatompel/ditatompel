@@ -59,6 +59,8 @@
 # mpv config
 + /home/user/.config/mpv/
 + /home/user/.config/mpv/mpv.conf
++ /home/user/.config/mpv/scripts/***
++ /home/user/.config/mpv/script-opts/***
 # yazi config
 + /home/user/.config/yazi/
 + /home/user/.config/yazi/yazi.toml
