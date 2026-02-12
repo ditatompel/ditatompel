@@ -1,6 +1,11 @@
+lib32-nvidia-580xx-utils
 localsend-bin
+nvidia-580xx-dkms
+nvidia-580xx-settings
+nvidia-580xx-utils
 obs-multi-rtmp
 obs-studio-git
+opencl-nvidia-580xx
 thinkfan
 winbox
 yay
