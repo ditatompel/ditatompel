@@ -15,6 +15,7 @@ cuda
 curl
 dart-sass
 dash
+deskflow
 dmidecode
 dnsmasq
 docker
