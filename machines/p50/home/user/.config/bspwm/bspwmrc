@@ -65,10 +65,11 @@ bspc rule -a ff-dt                     desktop='^2'  follow=on
 bspc rule -a firefox-developer-edition desktop='^8'  follow=on
 bspc rule -a TelegramDesktop           desktop='^6'  follow=on split_ratio=0.60
 bspc rule -a nheko                     desktop='^6'  follow=on split_ratio=0.40
-bspc rule -a Gimp-3.0                  desktop='^9'  follow=on
-bspc rule -a "thunderbird":Mail        desktop='^12' follow=on
-bspc rule -a "thunderbird":Navigator   desktop='^12' state=floating
-bspc rule -a "thunderbird":Msgcompose  desktop='^12' state=floating
+bspc rule -a Gimp                      desktop='^10' follow=on
+
+bspc rule -a "org.mozilla.Thunderbird":Mail        desktop='^6' follow=on
+bspc rule -a "org.mozilla.Thunderbird":Navigator   desktop='^6' state=floating
+bspc rule -a "org.mozilla.Thunderbird":Msgcompose  desktop='^6' state=floating
 
 bspc rule -a KeePassXC   state=floating
 bspc rule -a mpv         state=floating
