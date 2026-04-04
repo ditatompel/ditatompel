@@ -6,7 +6,6 @@ HISTSIZE=50500 # number of commands that are loaded into memory from history fil
 # options. See `man zshoptions`
 setopt PROMPT_SUBST
 
-#setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
